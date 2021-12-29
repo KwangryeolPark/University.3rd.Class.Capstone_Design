@@ -1,0 +1,1376 @@
+[
+  {
+    "ID": "c:rcc.h@24@macro@_RCC_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_RCC_H",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "_RCC_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@_RCC",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "_RCC",
+    "location": {
+      "column": "8",
+      "line": "6",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@_RCC@FI@CR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "CR",
+        "location": {
+          "column": "19",
+          "line": "7",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "CR",
+        "origin": "user_include",
+        "scope": "_RCC"
+      },
+      {
+        "ID": "c:@S@_RCC@FI@CFGR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "CFGR",
+        "location": {
+          "column": "19",
+          "line": "8",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "CFGR",
+        "origin": "user_include",
+        "scope": "_RCC"
+      },
+      {
+        "ID": "c:@S@_RCC@FI@CIR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "CIR",
+        "location": {
+          "column": "19",
+          "line": "9",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "CIR",
+        "origin": "user_include",
+        "scope": "_RCC"
+      },
+      {
+        "ID": "c:@S@_RCC@FI@APB2RSTR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "APB2RSTR",
+        "location": {
+          "column": "19",
+          "line": "10",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "APB2RSTR",
+        "origin": "user_include",
+        "scope": "_RCC"
+      },
+      {
+        "ID": "c:@S@_RCC@FI@APB1RSTR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "APB1RSTR",
+        "location": {
+          "column": "19",
+          "line": "11",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "APB1RSTR",
+        "origin": "user_include",
+        "scope": "_RCC"
+      },
+      {
+        "ID": "c:@S@_RCC@FI@AHBENR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "AHBENR",
+        "location": {
+          "column": "19",
+          "line": "12",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "AHBENR",
+        "origin": "user_include",
+        "scope": "_RCC"
+      },
+      {
+        "ID": "c:@S@_RCC@FI@APB2ENR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "APB2ENR",
+        "location": {
+          "column": "19",
+          "line": "13",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "APB2ENR",
+        "origin": "user_include",
+        "scope": "_RCC"
+      },
+      {
+        "ID": "c:@S@_RCC@FI@APB1ENR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "APB1ENR",
+        "location": {
+          "column": "19",
+          "line": "14",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "APB1ENR",
+        "origin": "user_include",
+        "scope": "_RCC"
+      },
+      {
+        "ID": "c:@S@_RCC@FI@BDCR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "BDCR",
+        "location": {
+          "column": "19",
+          "line": "15",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "BDCR",
+        "origin": "user_include",
+        "scope": "_RCC"
+      },
+      {
+        "ID": "c:@S@_RCC@FI@CSR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "CSR",
+        "location": {
+          "column": "19",
+          "line": "16",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "CSR",
+        "origin": "user_include",
+        "scope": "_RCC"
+      },
+      {
+        "ID": "c:@S@_RCC@FI@AHBSTR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "AHBSTR",
+        "location": {
+          "column": "19",
+          "line": "17",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "AHBSTR",
+        "origin": "user_include",
+        "scope": "_RCC"
+      },
+      {
+        "ID": "c:@S@_RCC@FI@CFGR2",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "CFGR2",
+        "location": {
+          "column": "19",
+          "line": "18",
+          "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+        },
+        "name": "CFGR2",
+        "origin": "user_include",
+        "scope": "_RCC"
+      }
+    ],
+    "name": "_RCC",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@RCC",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "RCC",
+    "location": {
+      "column": "23",
+      "line": "21",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "RCC",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@552@macro@TIM11EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM11EN",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM11EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@572@macro@TIM10EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM10EN",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM10EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@592@macro@TIM9EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM9EN",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM9EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@612@macro@ADC3EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ADC3EN",
+    "location": {
+      "column": "9",
+      "line": "28",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "ADC3EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@632@macro@USART1EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "USART1EN",
+    "location": {
+      "column": "9",
+      "line": "29",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "USART1EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@660@macro@TIM8EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM8EN",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM8EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@680@macro@SPI1EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SPI1EN",
+    "location": {
+      "column": "9",
+      "line": "31",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "SPI1EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@700@macro@TIM1EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM1EN",
+    "location": {
+      "column": "9",
+      "line": "32",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM1EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@720@macro@ADC2EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ADC2EN",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "ADC2EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@740@macro@ADC1EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ADC1EN",
+    "location": {
+      "column": "9",
+      "line": "34",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "ADC1EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@759@macro@IOPGEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IOPGEN",
+    "location": {
+      "column": "9",
+      "line": "35",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "IOPGEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@778@macro@IOPFEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IOPFEN",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "IOPFEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@797@macro@IOPEEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IOPEEN",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "IOPEEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@816@macro@IOPDEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IOPDEN",
+    "location": {
+      "column": "9",
+      "line": "38",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "IOPDEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@835@macro@IOPCEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IOPCEN",
+    "location": {
+      "column": "9",
+      "line": "39",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "IOPCEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@854@macro@IOPBEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IOPBEN",
+    "location": {
+      "column": "9",
+      "line": "40",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "IOPBEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@873@macro@IOPAEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IOPAEN",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "IOPAEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@892@macro@AFIOEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "AFIOEN",
+    "location": {
+      "column": "9",
+      "line": "42",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "AFIOEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@913@macro@MCO",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MCO",
+    "location": {
+      "column": "9",
+      "line": "44",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "MCO",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@933@macro@USBPRE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "USBPRE",
+    "location": {
+      "column": "9",
+      "line": "45",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "USBPRE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@953@macro@PLLMUL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLLMUL",
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PLLMUL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@973@macro@PLLXTPRE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLLXTPRE",
+    "location": {
+      "column": "9",
+      "line": "47",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PLLXTPRE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1001@macro@PLLSRC",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLLSRC",
+    "location": {
+      "column": "9",
+      "line": "48",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PLLSRC",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1021@macro@ADCPRE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ADCPRE",
+    "location": {
+      "column": "9",
+      "line": "49",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "ADCPRE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1041@macro@PPRE2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PPRE2",
+    "location": {
+      "column": "9",
+      "line": "50",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PPRE2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1061@macro@PPRE1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PPRE1",
+    "location": {
+      "column": "9",
+      "line": "51",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PPRE1",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1080@macro@HPRE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HPRE",
+    "location": {
+      "column": "9",
+      "line": "52",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "HPRE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1099@macro@SWS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SWS",
+    "location": {
+      "column": "9",
+      "line": "53",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "SWS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1118@macro@SW",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW",
+    "location": {
+      "column": "9",
+      "line": "54",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "SW",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1139@macro@PLLRDY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLLRDY",
+    "location": {
+      "column": "9",
+      "line": "56",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PLLRDY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1159@macro@PLLON",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLLON",
+    "location": {
+      "column": "9",
+      "line": "57",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PLLON",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1179@macro@CSSON",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CSSON",
+    "location": {
+      "column": "9",
+      "line": "58",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "CSSON",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1199@macro@HSEBYP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSEBYP",
+    "location": {
+      "column": "9",
+      "line": "59",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "HSEBYP",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1219@macro@HSERDY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSERDY",
+    "location": {
+      "column": "9",
+      "line": "60",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "HSERDY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1239@macro@HSEON",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSEON",
+    "location": {
+      "column": "9",
+      "line": "61",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "HSEON",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1259@macro@HSICAL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSICAL",
+    "location": {
+      "column": "9",
+      "line": "62",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "HSICAL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1278@macro@HSITRIM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSITRIM",
+    "location": {
+      "column": "9",
+      "line": "63",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "HSITRIM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1297@macro@HSIRDY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSIRDY",
+    "location": {
+      "column": "9",
+      "line": "64",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "HSIRDY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1316@macro@HSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HSION",
+    "location": {
+      "column": "9",
+      "line": "65",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "HSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1337@macro@DACEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DACEN",
+    "location": {
+      "column": "9",
+      "line": "67",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "DACEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1357@macro@PWREN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PWREN",
+    "location": {
+      "column": "9",
+      "line": "68",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PWREN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1377@macro@BKPEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BKPEN",
+    "location": {
+      "column": "9",
+      "line": "69",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "BKPEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1397@macro@CANEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CANEN",
+    "location": {
+      "column": "9",
+      "line": "70",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "CANEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1417@macro@USBEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "USBEN",
+    "location": {
+      "column": "9",
+      "line": "71",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "USBEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1437@macro@I2C2EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C2EN",
+    "location": {
+      "column": "9",
+      "line": "72",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "I2C2EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1457@macro@I2C1EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C1EN",
+    "location": {
+      "column": "9",
+      "line": "73",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "I2C1EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1477@macro@UART5EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART5EN",
+    "location": {
+      "column": "9",
+      "line": "74",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "UART5EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1497@macro@UART4EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART4EN",
+    "location": {
+      "column": "9",
+      "line": "75",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "UART4EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1517@macro@USART3EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "USART3EN",
+    "location": {
+      "column": "9",
+      "line": "76",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "USART3EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1545@macro@USART2EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "USART2EN",
+    "location": {
+      "column": "9",
+      "line": "77",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "USART2EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1573@macro@SPI3EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SPI3EN",
+    "location": {
+      "column": "9",
+      "line": "78",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "SPI3EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1593@macro@SPI2EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SPI2EN",
+    "location": {
+      "column": "9",
+      "line": "79",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "SPI2EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1613@macro@WWDGEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "WWDGEN",
+    "location": {
+      "column": "9",
+      "line": "80",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "WWDGEN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1633@macro@TIM14EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM14EN",
+    "location": {
+      "column": "9",
+      "line": "81",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM14EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1652@macro@TIM13EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM13EN",
+    "location": {
+      "column": "9",
+      "line": "82",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM13EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1671@macro@TIM12EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM12EN",
+    "location": {
+      "column": "9",
+      "line": "83",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM12EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1690@macro@TIM7EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM7EN",
+    "location": {
+      "column": "9",
+      "line": "84",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM7EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1708@macro@TIM6EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM6EN",
+    "location": {
+      "column": "9",
+      "line": "85",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM6EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1726@macro@TIM5EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM5EN",
+    "location": {
+      "column": "9",
+      "line": "86",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM5EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1744@macro@TIM4EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM4EN",
+    "location": {
+      "column": "9",
+      "line": "87",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM4EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1762@macro@TIM3EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM3EN",
+    "location": {
+      "column": "9",
+      "line": "88",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM3EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1780@macro@TIM2EN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIM2EN",
+    "location": {
+      "column": "9",
+      "line": "89",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "TIM2EN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1802@macro@I2S3SRC",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2S3SRC",
+    "location": {
+      "column": "9",
+      "line": "91",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "I2S3SRC",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1822@macro@I2S2SRC",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2S2SRC",
+    "location": {
+      "column": "9",
+      "line": "92",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "I2S2SRC",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1842@macro@PREDIV1SRC",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PREDIV1SRC",
+    "location": {
+      "column": "9",
+      "line": "93",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PREDIV1SRC",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1870@macro@PLL3MUL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLL3MUL",
+    "location": {
+      "column": "9",
+      "line": "94",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PLL3MUL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1890@macro@PLL2MUL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLL2MUL",
+    "location": {
+      "column": "9",
+      "line": "95",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PLL2MUL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1909@macro@PREDIV2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PREDIV2",
+    "location": {
+      "column": "9",
+      "line": "96",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PREDIV2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:rcc.h@1928@macro@PREDIV1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PREDIV1",
+    "location": {
+      "column": "9",
+      "line": "97",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\stm32\\rcc.h"
+    },
+    "name": "PREDIV1",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:typedef.h@28@macro@_TYPEDEF_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_TYPEDEF_H",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\typedef.h"
+    },
+    "name": "_TYPEDEF_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:typedef.h@T@uint8_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned char",
+    "location": {
+      "column": "33",
+      "line": "4",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\typedef.h"
+    },
+    "name": "uint8_t",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:typedef.h@T@uint16_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned short",
+    "location": {
+      "column": "33",
+      "line": "5",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\typedef.h"
+    },
+    "name": "uint16_t",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:typedef.h@T@uint32_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned long",
+    "location": {
+      "column": "33",
+      "line": "6",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\typedef.h"
+    },
+    "name": "uint32_t",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:typedef.h@T@uint64_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned long long",
+    "location": {
+      "column": "33",
+      "line": "7",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\typedef.h"
+    },
+    "name": "uint64_t",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:typedef.h@T@int8_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "char",
+    "location": {
+      "column": "33",
+      "line": "9",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\typedef.h"
+    },
+    "name": "int8_t",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:typedef.h@T@int16_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "short",
+    "location": {
+      "column": "33",
+      "line": "10",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\typedef.h"
+    },
+    "name": "int16_t",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:typedef.h@T@int32_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "int",
+    "location": {
+      "column": "33",
+      "line": "11",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\typedef.h"
+    },
+    "name": "int32_t",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:typedef.h@T@int64_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "long long",
+    "location": {
+      "column": "33",
+      "line": "12",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\typedef.h"
+    },
+    "name": "int64_t",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:typedef.h@392@macro@true",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "true",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\typedef.h"
+    },
+    "name": "true",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:typedef.h@411@macro@false",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "false",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\res\\typedef.h"
+    },
+    "name": "false",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@initRCC#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void initRCC(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\main.c"
+    },
+    "name": "initRCC",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "5",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@initRCC#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void initRCC(void)",
+    "location": {
+      "column": "6",
+      "line": "11",
+      "path": "H:\\\ub300\ud559\\3\ud559\ub144\\2\ud559\uae30\\\ucea1\uc2a4\ud1a4\ub514\uc790\uc7782\\Project01\\main.c"
+    },
+    "name": "initRCC",
+    "origin": "project_file",
+    "scope": null
+  }
+]
