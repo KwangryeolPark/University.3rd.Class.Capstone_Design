@@ -17,9 +17,7 @@
 
 // =============================================================================
 
-#define TIM2_500_US_COUNT       40
-#define SEND_BROADCAST          0
-#define RECV_BROADCAST          0
+#define TIM2_500_US_COUNT       40                              //      The count of TIM2 to be 500 us
 
 // =============================================================================
 
@@ -27,11 +25,11 @@ void IR_TRANSMIT_MODULATION_TIMER_INIT(void);
 void IR_TRANSMIT_MODULATION_TIMER_ENABLE(void);
 void IR_TRANSMIT_PORT_INIT(void);
 void IR_TRANSMIT_INIT(void);
-void IR_TRANSMIT_SIGNAL_ONE(void);
-void IR_TRANSMIT_SIGNAL_ZERO(void);
 
 // =============================================================================
 
+void IR_TRANSMIT_SIGNAL_ONE(void);
+void IR_TRANSMIT_SIGNAL_ZERO(void);
 void IR_TRANSMIT_SEND_BYTE(uint8_t byte);
 void IR_TRANSMIT_SEND_FRAME(struct IR_FRAME *frame);
 

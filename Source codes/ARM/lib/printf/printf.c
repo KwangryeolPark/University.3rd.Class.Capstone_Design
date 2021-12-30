@@ -9,7 +9,7 @@ void USART2_INIT(void) {
   RCC -> APB1ENR        |=      (1 << USART2EN);
 
   USART2 -> BRR = (19 << 4) | 8;
-  USART2 -> CR1 = (1 << UE) | (1 << TE);    // USART enable, Transmit & Receive enable
+  USART2 -> CR1 = (1 << UE) | (1 << TE);                                        // USART enable, Transmit & Receive enable
 }
 
 int putc(struct _USART volatile *UART, int c) {
