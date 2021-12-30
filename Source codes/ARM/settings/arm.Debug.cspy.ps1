@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "H:\대학\3학년\2학기\캡스톤디자인2\ARM\settings\arm.Debug.general.xcl" --backend -f "H:\대학\3학년\2학기\캡스톤디자인2\ARM\settings\arm.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\settings\arm.Debug.general.xcl" --backend -f "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\settings\arm.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "H:\대학\3학년\2학기\캡스톤디자인2\ARM\settings\arm.Debug.general.xcl" --debug_file=$debugfile --backend -f "H:\대학\3학년\2학기\캡스톤디자인2\ARM\settings\arm.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\settings\arm.Debug.general.xcl" --debug_file=$debugfile --backend -f "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\settings\arm.Debug.driver.xcl" 
 }

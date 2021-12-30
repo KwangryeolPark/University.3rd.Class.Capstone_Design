@@ -4,44 +4,58 @@
   APB2          :       72 MHz
   ADC           :       12 MHz
 
-  TIM2          :       ~74 KHz  (=72 MHz / 972 = 74,074.074 = 13.5 us) 
-TIM2 is for IR transmitter.
-The IR transmitter works at 37KHz for modulation
+  TIM2          :       80 KHz = 2 * 40 KHz
+    TIM2 is for IR transmitter.
+    The IR transmitter works at 40KHz for modulation
+
+  TIM3          :       50 us
+    TIM3 is for IR receiver.
 
   TIM7          :       100 KHZ
-TIM7 is for delay_ms.
+    TIM7 is for delay_ms.
 
 */
 
 #include "rcc.h"
 #include "delay.h"
-#include "ir_transmit.h"
+#include "ir_transmit_psy.h"
+#include "ir_receive_psy.h"
 #include "printf.h"
+#include "usart.h"
 
-
-void initRCC(void);
-
-
-
-
-
-
-
-
-
-
-
-
-
+void RCC_INIT(void);
 
 int main(void) {
+  RCC_INIT();
+  DELAY_INIT();
+  IR_TRANSMIT_INIT();
+  IR_RECEIVE_INIT();
+  USART2_INIT();
   
-  initRCC();
-  initIRTransmitter();
-//  initDelay();
-//  initUART2();
+  struct IR_FRAME frame;
+  frame.p_datagram = (void*) "a";
+  frame.size_datagram = 2;
+  IR_TRANSMIT_SEND_FRAME(&frame);
+/*  delay_ms(5);
+  IR_TRANSMIT_SIGNAL_ONE();
+
+  IR_TRANSMIT_SEND_BYTE('a');
+    
+  IR_TRANSMIT_SIGNAL_ONE();*/
   
-  return 0;
+  for (int i = 0; i < 50; i++) {
+    if (msgs[i] == 0);
+    else if (msgs[i] < 25) {
+      printf("   1");
+    } else if (msgs[i] < 65) {
+      printf("   0");
+    } else {
+      printf("IDLE");
+    }
+  }
+  printf("\n");
+  
+  while (1);
 }
 
 
@@ -56,7 +70,7 @@ int main(void) {
 
 
 
-void initRCC(void) {
+void RCC_INIT(void) {
   /*
     Initalize RCC
     SYSCLK      :       72 MHz
@@ -64,11 +78,12 @@ void initRCC(void) {
     APB2        :       72 MHz
     ADC         :       12 MHz
   */ 
-  (*(unsigned long *) 0x40022000)     &=      ~(0x07);        //      Clear the register
-  (*(unsigned long *) 0x40022000)     |=      (0x02); //      Set the flash latency to mode two -> without changing it, the mcu cannot run at 72MHz clock.
+  
+  (*(unsigned long *) 0x40022000)     &=      ~(0x07);          //      Clear the register
+  (*(unsigned long *) 0x40022000)     |=      (0x02);           //      Set the flash latency to mode two -> without changing it, the mcu cannot run at 72MHz clock.
 
   RCC ->        CFGR    =       0;              //      Reset value
-  RCC ->        CFGR    |=      (1 << 17);      //      PLLXTPRE
+  RCC ->        CFGR    &=      ~(1 << 17);     //      PLLXTPRE
   RCC ->        CFGR    |=      (1 << 16);      //      PLLSRC
   RCC ->        CFGR    |=      (7 << 18);      //      PLLMUL
 

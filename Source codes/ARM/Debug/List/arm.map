@@ -1,23 +1,48 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.50.9.278/W32 for ARM                  29/Dec/2021  12:41:52
+# IAR ELF Linker V8.50.9.278/W32 for ARM                  30/Dec/2021  15:57:48
 # Copyright 2007-2020 IAR Systems AB.
 #
 #    Output file  =
-#        H:\대학\3학년\2학기\캡스톤디자인2\ARM\Debug\Exe\arm.out
+#        H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Exe\arm.out
 #    Map file     =
-#        H:\대학\3학년\2학기\캡스톤디자인2\ARM\Debug\List\arm.map
+#        H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\List\arm.map
 #    Command line =
-#        -f C:\Users\pkr12\AppData\Local\Temp\EWEF2A.tmp
-#        (H:\대학\3학년\2학기\캡스톤디자인2\ARM\Debug\Obj\main.o
-#        H:\대학\3학년\2학기\캡스톤디자인2\ARM\Debug\Obj\startup_stm32f10x_hd_vl.o
-#        --no_out_extension -o
-#        H:\대학\3학년\2학기\캡스톤디자인2\ARM\Debug\Exe\arm.out
-#        --map
-#        H:\대학\3학년\2학기\캡스톤디자인2\ARM\Debug\List\arm.map
-#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
-#        8.4\arm\config\linker\ST\stm32f103x8.icf" --semihosting --entry
-#        __iar_program_start --vfe --text_out locale)
+#        -f C:\Users\pkr12\AppData\Local\Temp\EWDC1A.tmp
+#        ("H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\adc.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\afio.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\delay.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\exti.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\gpio.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\ir_receive_psy.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\ir_transmit_psy.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\main.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\printf.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\rcc.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\startup_stm32f10x_hd_vl.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\tim.o"
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Obj\usart.o" --no_out_extension -o
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\Exe\arm.out" --map
+#        "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source
+#        codes\ARM\Debug\List\arm.map" --config "C:\Program Files (x86)\IAR
+#        Systems\Embedded Workbench 8.4\arm\config\linker\ST\stm32f103x8.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
 #
 ###############################################################################
 
@@ -53,114 +78,134 @@ define block HEAP with size = 2K, alignment = 8 { };
           rw, block CSTACK, block HEAP };
 initialize by copy { rw };
 
-  Section            Kind         Address   Size  Object
-  -------            ----         -------   ----  ------
-"A0":                                      0x134
-  .intvec            ro code   0x800'0000  0x134  startup_stm32f10x_hd_vl.o [1]
-                             - 0x800'0134  0x134
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x134
+  .intvec            ro code   0x800'0000   0x134  startup_stm32f10x_hd_vl.o [1]
+                             - 0x800'0134   0x134
 
-"P1":                                      0x40f
-  .text              ro code   0x800'0134  0x224  main.o [1]
-  .text              ro code   0x800'0358   0x38  packbits_init_single.o [3]
-  .text              ro code   0x800'0390   0x28  data_init.o [3]
-  .iar.init_table    const     0x800'03b8   0x10  - Linker created -
-  .text              ro code   0x800'03c8   0x1e  cmain.o [3]
-  .text              ro code   0x800'03e6    0x4  low_level_init.o [2]
-  .text              ro code   0x800'03ea    0x4  exit.o [2]
-  .rodata            const     0x800'03ee    0x1  unwind_debug.o [4]
-  .text              ro code   0x800'03f0    0xa  cexit.o [3]
-  .text              ro code   0x800'03fc   0x14  exit.o [4]
-  .text              ro code   0x800'0410   0x1c  cstartup_M.o [3]
-  .text              ro code   0x800'042c    0x8  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0434    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0438    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'043c    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0440    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0444    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0448    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'044c    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0450    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0454    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0458    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'045c    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0460    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0464    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0468    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'046c    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0470    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0474    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0478    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'047c    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0480    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0484    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0488    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'048c    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0490    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0494    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0498    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'049c    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04a0    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04a4    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04a8    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04ac    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04b0    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04b4    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04b8    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04bc    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04c0    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04c4    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04c8    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04cc    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04d0    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04d4    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04d8    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04dc    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04e0    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04e4    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04e8    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04ec    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04f0    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04f4    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04f8    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'04fc    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0500    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0504    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0508    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'050c    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0510    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0514    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0518    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'051c    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0520    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0524    0x4  startup_stm32f10x_hd_vl.o [1]
-  .text              ro code   0x800'0528    0x4  startup_stm32f10x_hd_vl.o [1]
-  .rodata            const     0x800'052c    0x0  packbits_init_single.o [3]
-  Initializer bytes  const     0x800'052c   0x17  <for P2-1>
-                             - 0x800'0543  0x40f
+"P1":                                       0xb48
+  .text              ro code   0x800'0134   0x3e4  printf.o [1]
+  .text              ro code   0x800'0518   0x1ea  ir_transmit_psy.o [1]
+  .text              ro code   0x800'0702    0x3a  zero_init3.o [3]
+  .text              ro code   0x800'073c    0x94  delay.o [1]
+  .text              ro code   0x800'07d0   0x150  ir_receive_psy.o [1]
+  .text              ro code   0x800'0920   0x138  main.o [1]
+  .text              ro code   0x800'0a58    0x2e  copy_init3.o [3]
+  .rodata            const     0x800'0a86     0x1  unwind_debug.o [4]
+  .text              ro code   0x800'0a88    0x28  data_init.o [3]
+  Initializer bytes  const     0x800'0ab0    0x24  <for P2-1>
+  .iar.init_table    const     0x800'0ad4    0x24  - Linker created -
+  .text              ro code   0x800'0af8    0x1e  cmain.o [3]
+  .text              ro code   0x800'0b16     0x4  low_level_init.o [2]
+  .text              ro code   0x800'0b1a     0x4  exit.o [2]
+  .text              ro code   0x800'0b20     0xa  cexit.o [3]
+  .text              ro code   0x800'0b2c    0x14  exit.o [4]
+  .text              ro code   0x800'0b40    0x1c  cstartup_M.o [3]
+  .rodata            const     0x800'0b5c     0x8  main.o [1]
+  .rodata            const     0x800'0b64     0x8  main.o [1]
+  .rodata            const     0x800'0b6c     0x8  main.o [1]
+  .rodata            const     0x800'0b74     0x8  printf.o [1]
+  .text              ro code   0x800'0b7c     0x8  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0b84     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0b88     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0b8c     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0b90     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0b94     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0b98     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0b9c     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0ba0     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0ba4     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0ba8     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bac     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bb0     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bb4     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bb8     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bbc     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bc0     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bc4     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bc8     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bcc     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bd0     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bd4     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bd8     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bdc     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0be0     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0be4     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0be8     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bec     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bf0     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bf4     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bf8     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0bfc     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c00     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c04     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c08     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c0c     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c10     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c14     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c18     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c1c     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c20     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c24     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c28     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c2c     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c30     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c34     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c38     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c3c     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c40     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c44     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c48     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c4c     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c50     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c54     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c58     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c5c     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c60     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c64     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c68     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c6c     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c70     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c74     0x4  startup_stm32f10x_hd_vl.o [1]
+  .text              ro code   0x800'0c78     0x4  startup_stm32f10x_hd_vl.o [1]
+  .rodata            const     0x800'0c7c     0x0  zero_init3.o [3]
+  .rodata            const     0x800'0c7c     0x0  copy_init3.o [3]
+                             - 0x800'0c7c   0xb48
 
-"P2", part 1 of 2:                          0x20
-  P2-1                        0x2000'0000   0x20  <Init block>
-    .data            inited   0x2000'0000    0x4  main.o [1]
-    .data            inited   0x2000'0004    0x4  main.o [1]
-    .data            inited   0x2000'0008    0x4  main.o [1]
-    .data            inited   0x2000'000c    0x4  main.o [1]
-    .data            inited   0x2000'0010    0x4  main.o [1]
-    .bss             inited   0x2000'0014    0x4  main.o [1]
-    .bss             inited   0x2000'0018    0x4  main.o [1]
-    .bss             inited   0x2000'001c    0x4  main.o [1]
-                            - 0x2000'0020   0x20
+"P2", part 1 of 3:                           0x24
+  P2-1                        0x2000'0000    0x24  <Init block>
+    .data            inited   0x2000'0000     0x4  afio.o [1]
+    .data            inited   0x2000'0004     0x4  exti.o [1]
+    .data            inited   0x2000'0008     0x4  gpio.o [1]
+    .data            inited   0x2000'000c     0x4  gpio.o [1]
+    .data            inited   0x2000'0010     0x4  rcc.o [1]
+    .data            inited   0x2000'0014     0x4  tim.o [1]
+    .data            inited   0x2000'0018     0x4  tim.o [1]
+    .data            inited   0x2000'001c     0x4  tim.o [1]
+    .data            inited   0x2000'0020     0x4  usart.o [1]
+                            - 0x2000'0024    0x24
 
-"P2", part 2 of 2:                         0x800
-  CSTACK                      0x2000'0020  0x800  <Block>
-    CSTACK           uninit   0x2000'0020  0x800  <Block tail>
-                            - 0x2000'0820  0x800
+"P2", part 2 of 3:                         0x1014
+  .bss               zero     0x2000'0024  0x1000  ir_receive_psy.o [1]
+  .bss               zero     0x2000'1024     0x4  delay.o [1]
+  .bss               zero     0x2000'1028     0x4  ir_receive_psy.o [1]
+  .bss               zero     0x2000'102c     0x4  ir_receive_psy.o [1]
+  .bss               zero     0x2000'1030     0x4  ir_transmit_psy.o [1]
+  .bss               zero     0x2000'1034     0x1  ir_transmit_psy.o [1]
+                            - 0x2000'1035  0x1011
+
+"P2", part 3 of 3:                          0x800
+  CSTACK                      0x2000'1038   0x800  <Block>
+    CSTACK           uninit   0x2000'1038   0x800  <Block tail>
+                            - 0x2000'1838   0x800
 
 Unused ranges:
 
          From           To    Size
          ----           --    ----
-   0x800'0543   0x800'ffff  0xfabd
-  0x2000'0820  0x2000'4fff  0x47e0
+   0x800'0c7c   0x800'ffff  0xf384
+  0x2000'1838  0x2000'4fff  0x37c8
 
 
 *******************************************************************************
@@ -169,11 +214,15 @@ Unused ranges:
 
           Address      Size
           -------      ----
-Copy/packbits (__iar_packbits_init_single3)
-    1 source range, total size 0x17 (71% of destination):
-           0x800'052c  0x17
-    1 destination range, total size 0x20:
-          0x2000'0000  0x20
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1011:
+          0x2000'0024  0x1011
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x24:
+           0x800'0ab0    0x24
+    1 destination range, total size 0x24:
+          0x2000'0000    0x24
 
 
 
@@ -187,11 +236,21 @@ command line/config:
     ----------------------------------------------------
     Total:
 
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\Debug\Obj: [1]
-    main.o                         548       23       32
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\Debug\Obj: [1]
+    afio.o                                    4        4
+    delay.o                        148                 4
+    exti.o                                    4        4
+    gpio.o                                    8        8
+    ir_receive_psy.o               336             4'104
+    ir_transmit_psy.o              490                 5
+    main.o                         312       24
+    printf.o                       996        8
+    rcc.o                                     4        4
     startup_stm32f10x_hd_vl.o      564
+    tim.o                                    12       12
+    usart.o                                   4        4
     ----------------------------------------------------
-    Total:                       1'112       23       32
+    Total:                       2'846       68    4'149
 
 dl7M_tln.a: [2]
     exit.o                           4
@@ -202,11 +261,12 @@ dl7M_tln.a: [2]
 rt7M_tl.a: [3]
     cexit.o                         10
     cmain.o                         30
+    copy_init3.o                    46
     cstartup_M.o                    28
     data_init.o                     40
-    packbits_init_single.o          56
+    zero_init3.o                    58
     ----------------------------------------------------
-    Total:                         164
+    Total:                         212
 
 shb_l.a: [4]
     exit.o                          20
@@ -214,67 +274,114 @@ shb_l.a: [4]
     ----------------------------------------------------
     Total:                          20        1
 
-    Gaps                             3
-    Linker created                           16    2'048
+    Gaps                             5
+    Linker created                           36    2'048
 --------------------------------------------------------
-    Grand Total:                 1'307       40    2'080
+    Grand Total:                 3'091      105    6'197
 
 
 *******************************************************************************
 *** ENTRY LIST
 ***
 
-Entry                       Address  Size  Type      Object
------                       -------  ----  ----      ------
-.iar.init_table$$Base    0x800'03b8         --   Gb  - Linker created -
-.iar.init_table$$Limit   0x800'03c8         --   Gb  - Linker created -
-?main                    0x800'03c9        Code  Gb  cmain.o [3]
-CSTACK$$Base            0x2000'0020         --   Gb  - Linker created -
-CSTACK$$Limit           0x2000'0820         --   Gb  - Linker created -
-DELAY_COUNT             0x2000'0014   0x4  Data  Gb  main.o [1]
-GPIOA                   0x2000'0010   0x4  Data  Gb  main.o [1]
-IR_transmitter_counter  0x2000'0018   0x4  Data  Gb  main.o [1]
-IR_transmitter_flag     0x2000'001c   0x4  Data  Gb  main.o [1]
-RCC                     0x2000'0000   0x4  Data  Gb  main.o [1]
-Region$$Table$$Base      0x800'03b8         --   Gb  - Linker created -
-Region$$Table$$Limit     0x800'03c8         --   Gb  - Linker created -
-TIM2                    0x2000'0004   0x4  Data  Gb  main.o [1]
-TIM2_IRQHandler          0x800'01ad  0x24  Code  Gb  main.o [1]
-TIM7                    0x2000'0008   0x4  Data  Gb  main.o [1]
-TIM7_IRQHandler          0x800'0135  0x1c  Code  Gb  main.o [1]
-USART2                  0x2000'000c   0x4  Data  Gb  main.o [1]
-__cmain                  0x800'03c9        Code  Gb  cmain.o [3]
-__exit                   0x800'03fd  0x14  Code  Gb  exit.o [4]
-__iar_data_init3         0x800'0391  0x28  Code  Gb  data_init.o [3]
-__iar_debug_exceptions   0x800'03ee   0x1  Data  Gb  unwind_debug.o [4]
-__iar_packbits_init_single3
-                         0x800'0359  0x38  Code  Gb  packbits_init_single.o [3]
-__iar_program_start      0x800'0411        Code  Gb  cstartup_M.o [3]
-__low_level_init         0x800'03e7   0x4  Code  Gb  low_level_init.o [2]
-__vector_table           0x800'0000        Data  Gb  startup_stm32f10x_hd_vl.o [1]
-_call_main               0x800'03d5        Code  Gb  cmain.o [3]
-_exit                    0x800'03f1        Code  Gb  cexit.o [3]
-_main                    0x800'03df        Code  Gb  cmain.o [3]
-enableTIM2()             0x800'0201  0x22  Code  Gb  main.o [1]
-enableTIM7()             0x800'017f  0x22  Code  Gb  main.o [1]
-exit                     0x800'03eb   0x4  Code  Gb  exit.o [2]
-initDelay()              0x800'01a1   0xc  Code  Gb  main.o [1]
-initIRTransmitter()      0x800'0223   0xc  Code  Gb  main.o [1]
-initRCC()                0x800'0279  0xb0  Code  Gb  main.o [1]
-initTIM2()               0x800'01d1  0x30  Code  Gb  main.o [1]
-initTIM7()               0x800'0151  0x2e  Code  Gb  main.o [1]
-initUART2()              0x800'022f  0x34  Code  Gb  main.o [1]
-main                     0x800'0263  0x16  Code  Gb  main.o [1]
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base    0x800'0ad4           --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'0af8           --   Gb  - Linker created -
+?main                    0x800'0af9          Code  Gb  cmain.o [3]
+AFIO                    0x2000'0000     0x4  Data  Gb  afio.o [1]
+CSTACK$$Base            0x2000'1038           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'1838           --   Gb  - Linker created -
+DELAY_COUNT             0x2000'1024     0x4  Data  Gb  delay.o [1]
+DELAY_INIT()             0x800'07c5     0xc  Code  Gb  delay.o [1]
+DELAY_TIMER_ENABLE()     0x800'0785    0x20  Code  Gb  delay.o [1]
+DELAY_TIMER_INIT()       0x800'075b    0x2a  Code  Gb  delay.o [1]
+EXTI                    0x2000'0004     0x4  Data  Gb  exti.o [1]
+EXTI15_10_IRQHandler     0x800'07e3    0x38  Code  Gb  ir_receive_psy.o [1]
+GPIOA                   0x2000'0008     0x4  Data  Gb  gpio.o [1]
+GPIOB                   0x2000'000c     0x4  Data  Gb  gpio.o [1]
+IR_RECEIVE_COUNTER      0x2000'1028     0x4  Data  Gb  ir_receive_psy.o [1]
+IR_RECEIVE_EXTI_ENABLE()
+                         0x800'088f    0x26  Code  Gb  ir_receive_psy.o [1]
+IR_RECEIVE_EXTI_INIT()   0x800'0865    0x2a  Code  Gb  ir_receive_psy.o [1]
+IR_RECEIVE_INIT()        0x800'0909    0x18  Code  Gb  ir_receive_psy.o [1]
+IR_RECEIVE_PORT_INIT()   0x800'08b5    0x2a  Code  Gb  ir_receive_psy.o [1]
+IR_RECEIVE_TIMER_ENABLE()
+                         0x800'0845    0x20  Code  Gb  ir_receive_psy.o [1]
+IR_RECEIVE_TIMER_INIT()
+                         0x800'081b    0x2a  Code  Gb  ir_receive_psy.o [1]
+IR_TRANSMIT_INIT()       0x800'05ab    0x10  Code  Gb  ir_transmit_psy.o [1]
+IR_TRANSMIT_MODULATION_TIMER_ENABLE()
+                         0x800'0561    0x20  Code  Gb  ir_transmit_psy.o [1]
+IR_TRANSMIT_MODULATION_TIMER_INIT()
+                         0x800'0537    0x2a  Code  Gb  ir_transmit_psy.o [1]
+IR_TRANSMIT_PORT_INIT()
+                         0x800'0581    0x2a  Code  Gb  ir_transmit_psy.o [1]
+IR_TRANSMIT_SEND_BYTE(unsigned char)
+                         0x800'06a5    0x2a  Code  Gb  ir_transmit_psy.o [1]
+IR_TRANSMIT_SEND_FRAME(IR_FRAME *)
+                         0x800'06cf    0x34  Code  Gb  ir_transmit_psy.o [1]
+IR_TRANSMIT_SIGNAL_ONE()
+                         0x800'05bb    0x62  Code  Gb  ir_transmit_psy.o [1]
+IR_TRANSMIT_SIGNAL_ZERO()
+                         0x800'061d    0x70  Code  Gb  ir_transmit_psy.o [1]
+IR_TRANSMIT_TRANSMITTER_COUNTER
+                        0x2000'1030     0x4  Data  Gb  ir_transmit_psy.o [1]
+IR_TRANSMIT_TRANSMITTER_FLAG
+                        0x2000'1034     0x1  Data  Gb  ir_transmit_psy.o [1]
+RCC                     0x2000'0010     0x4  Data  Gb  rcc.o [1]
+RCC_INIT()               0x800'0989    0xb0  Code  Gb  main.o [1]
+Region$$Table$$Base      0x800'0ad4           --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'0af8           --   Gb  - Linker created -
+TIM2                    0x2000'0014     0x4  Data  Gb  tim.o [1]
+TIM2_IRQHandler          0x800'0519    0x1e  Code  Gb  ir_transmit_psy.o [1]
+TIM3                    0x2000'0018     0x4  Data  Gb  tim.o [1]
+TIM3_IRQHandler          0x800'07d1    0x12  Code  Gb  ir_receive_psy.o [1]
+TIM4                    0x2000'001c     0x4  Data  Gb  tim.o [1]
+TIM4_IRQHandler          0x800'073d    0x1e  Code  Gb  delay.o [1]
+USART2                  0x2000'0020     0x4  Data  Gb  usart.o [1]
+USART2_INIT()            0x800'0135    0x4e  Code  Gb  printf.o [1]
+__cmain                  0x800'0af9          Code  Gb  cmain.o [3]
+__exit                   0x800'0b2d    0x14  Code  Gb  exit.o [4]
+__iar_copy_init3         0x800'0a59    0x2e  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'0a89    0x28  Code  Gb  data_init.o [3]
+__iar_debug_exceptions   0x800'0a86     0x1  Data  Gb  unwind_debug.o [4]
+__iar_program_start      0x800'0b41          Code  Gb  cstartup_M.o [3]
+__iar_zero_init3         0x800'0703    0x3a  Code  Gb  zero_init3.o [3]
+__low_level_init         0x800'0b17     0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000          Data  Gb  startup_stm32f10x_hd_vl.o [1]
+_call_main               0x800'0b05          Code  Gb  cmain.o [3]
+_exit                    0x800'0b21          Code  Gb  cexit.o [3]
+_main                    0x800'0b0f          Code  Gb  cmain.o [3]
+delay_ms(unsigned int)   0x800'07a5    0x10  Code  Gb  delay.o [1]
+exit                     0x800'0b1b     0x4  Code  Gb  exit.o [2]
+index                   0x2000'102c     0x4  Data  Gb  ir_receive_psy.o [1]
+main                     0x800'0921    0x68  Code  Gb  main.o [1]
+msgs                    0x2000'0024  0x1000  Data  Gb  ir_receive_psy.o [1]
+print(_USART volatile *, char **, int *)
+                         0x800'0357   0x18a  Code  Gb  printf.o [1]
+printchar(_USART volatile *, char **, int)
+                         0x800'01e3    0x1a  Code  Gb  printf.o [1]
+printf(char const *, ...)
+                         0x800'04e3    0x26  Code  Gb  printf.o [1]
+printi(_USART volatile *, char **, int, int, int, int, int, int)
+                         0x800'028b    0xcc  Code  Gb  printf.o [1]
+prints(_USART volatile *, char **, char const *, int, int)
+                         0x800'01fd    0x8e  Code  Gb  printf.o [1]
+putc(_USART volatile *, int)
+                         0x800'0183    0x42  Code  Gb  printf.o [1]
+puts(_USART volatile *, char const *)
+                         0x800'01c5    0x1e  Code  Gb  printf.o [1]
 
 
-[1] = H:\대학\3학년\2학기\캡스톤디자인2\ARM\Debug\Obj
+[1] = H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\Debug\Obj
 [2] = dl7M_tln.a
 [3] = rt7M_tl.a
 [4] = shb_l.a
 
-  1'307 bytes of readonly  code memory
-     40 bytes of readonly  data memory
-  2'080 bytes of readwrite data memory
+  3'091 bytes of readonly  code memory
+    105 bytes of readonly  data memory
+  6'197 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

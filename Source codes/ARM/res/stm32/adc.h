@@ -1,7 +1,11 @@
 #ifndef _ADC_H
 #define _ADC_H
 
+// =============================================================================
+
 #include "typedef.h"
+
+// =============================================================================
 
 struct _ADC {
   uint32_t        SR;
@@ -26,8 +30,10 @@ struct _ADC {
   uint32_t        DR;
 };
 
-volatile struct _ADC *ADC1 = (struct _ADC*) 0x40012400;
-volatile struct _ADC *ADC2 = (struct _ADC*) 0x40012800;
-volatile struct _ADC *ADC3 = (struct _ADC*) 0x40013C00;
+// =============================================================================
+
+extern volatile struct _ADC *ADC1;
+extern volatile struct _ADC *ADC2;
+extern volatile struct _ADC *ADC3;
 
 #endif

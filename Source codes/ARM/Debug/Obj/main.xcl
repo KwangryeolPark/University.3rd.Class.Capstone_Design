@@ -1,25 +1,27 @@
-"H:\대학\3학년\2학기\캡스톤디자인2\ARM\main.cpp"
+"H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\main.cpp"
 -std=c++17
 -ferror-limit=0
 -fbracket-depth=512
--funsigned-char
+-fsigned-char
 -MD
 -MF
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\Debug\Obj\main.pbi.dep
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\Debug\Obj\main.pbi.dep
 -o
 main.pbi
 -I
-H:\대학\3학년\2학기\캡스톤디자인2\ARM
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM
 -I
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\res\coretex m3\
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\res\coretex m3\
 -I
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\res\stm32\
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\res\stm32\
 -I
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\kernel\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\kernel\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar\
 -I
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\lib\ir_transmit\
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\lib\printf\
 -I
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\lib\printf\
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\lib\ir_transmit\psy\
+-I
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\lib\ir_transmit\
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 -I
@@ -27,18 +29,20 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\cpp
 -I
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\res\coretex m3
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\res\coretex m3
 -I
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\res\stm32
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\res\stm32
 -I
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\kernel\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\kernel\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\iar
 -I
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\lib\ir_transmit
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\lib\printf
 -I
-H:\대학\3학년\2학기\캡스톤디자인2\ARM\lib\printf
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\lib\ir_transmit\psy
+-I
+H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\lib\ir_transmit
 -D__CHAR_BITS__=8
--D__CHAR_MAX__=0xff
--D__CHAR_MIN__=0
+-D__CHAR_MAX__=127
+-D__CHAR_MIN__=(-__CHAR_MAX__-1)
 -D__CHAR_SIZE__=1
 -D__UNSIGNED_CHAR_MAX__=0xff
 -D__SIGNED_CHAR_MAX__=127
@@ -269,6 +273,7 @@ H:\대학\3학년\2학기\캡스톤디자인2\ARM\lib\printf
 -D__IAR_COMPILERBASE_STR__=10.6.13.1289
 -D__UNICODE_SOURCE_SUPPORTED__=1
 -D__VTABLE_MEM__=
+-D__SIGNED_CHARS__=1
 -D__PRAGMA_REDEFINE_EXTNAME=1
 -D__STDC__=1
 -D__STDC_VERSION__=201710L

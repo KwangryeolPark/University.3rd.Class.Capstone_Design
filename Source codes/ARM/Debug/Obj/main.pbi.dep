@@ -1,11 +1,15 @@
-main.pbi: H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\Ä¸½ºÅæµğÀÚÀÎ2\ARM\res\stm32\afio.h \
-  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\Ä¸½ºÅæµğÀÚÀÎ2\ARM\res\stm32\gpio.h \
-  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\Ä¸½ºÅæµğÀÚÀÎ2\ARM\res\stm32\usart.h \
-  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\Ä¸½ºÅæµğÀÚÀÎ2\ARM\lib\printf\printf.h \
-  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\Ä¸½ºÅæµğÀÚÀÎ2\ARM\lib\ir_transmit\ir_transmit.h \
-  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\Ä¸½ºÅæµğÀÚÀÎ2\ARM\res\coretex\ m3\nvic.h \
-  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\Ä¸½ºÅæµğÀÚÀÎ2\ARM\res\stm32\tim.h \
-  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\Ä¸½ºÅæµğÀÚÀÎ2\ARM\res\stm32\delay.h \
-  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\Ä¸½ºÅæµğÀÚÀÎ2\ARM\res\stm32\typedef.h \
-  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\Ä¸½ºÅæµğÀÚÀÎ2\ARM\res\stm32\rcc.h \
-  H:\ëŒ€í•™\3í•™ë…„\2í•™ê¸°\ìº¡ìŠ¤í†¤ë””ìì¸2\ARM\main.cpp
+main.pbi: \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\usart.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\lib\printf\printf.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\exti.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\afio.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\lib\ir_transmit\psy\ir_receive_psy.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\lib\ir_transmit\ir_structs.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\gpio.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\lib\ir_transmit\psy\ir_transmit_psy.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\coretex\ m3\nvic.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\tim.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\delay.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\typedef.h \
+  H:\´ëÇĞ\\3ÇĞ³â\\2ÇĞ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\rcc.h \
+  H:\ëŒ€í•™\3í•™ë…„\2í•™ê¸°\University.3rd.Class.Capston_Design\Source\ codes\ARM\main.cpp

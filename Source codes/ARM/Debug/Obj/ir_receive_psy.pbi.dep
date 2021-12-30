@@ -1,0 +1,11 @@
+ir_receive_psy.pbi: \
+  H:\´ëÇÐ\\3ÇÐ³â\\2ÇÐ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\exti.h \
+  H:\´ëÇÐ\\3ÇÐ³â\\2ÇÐ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\afio.h \
+  H:\´ëÇÐ\\3ÇÐ³â\\2ÇÐ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\lib\ir_transmit\ir_structs.h \
+  H:\´ëÇÐ\\3ÇÐ³â\\2ÇÐ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\gpio.h \
+  H:\´ëÇÐ\\3ÇÐ³â\\2ÇÐ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\coretex\ m3\nvic.h \
+  H:\´ëÇÐ\\3ÇÐ³â\\2ÇÐ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\tim.h \
+  H:\´ëÇÐ\\3ÇÐ³â\\2ÇÐ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\typedef.h \
+  H:\´ëÇÐ\\3ÇÐ³â\\2ÇÐ±â\\University.3rd.Class.Capston_Design\Source\ codes\ARM\res\stm32\rcc.h \
+  H:\ëŒ€í•™\3í•™ë…„\2í•™ê¸°\University.3rd.Class.Capston_Design\Source\ codes\ARM\lib\ir_transmit\psy\ir_receive_psy.h \
+  H:\ëŒ€í•™\3í•™ë…„\2í•™ê¸°\University.3rd.Class.Capston_Design\Source\ codes\ARM\lib\ir_transmit\psy\ir_receive_psy.c

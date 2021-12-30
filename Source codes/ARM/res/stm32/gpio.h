@@ -1,7 +1,11 @@
 #ifndef _GPIO_H
 #define _GPIO_H
 
+// =============================================================================
+
 #include "typedef.h"
+
+// =============================================================================
 
 struct _GPIO {
   uint32_t        CRL;
@@ -13,15 +17,17 @@ struct _GPIO {
   uint32_t        LCKR;
 };
 
-volatile struct _GPIO *GPIOA = (struct _GPIO*) 0x40010800;
-volatile struct _GPIO *GPIOB = (struct _GPIO*) 0x40010C00;
-volatile struct _GPIO *GPIOC = (struct _GPIO*) 0x40011000;
-volatile struct _GPIO *GPIOD = (struct _GPIO*) 0x40011400;
-volatile struct _GPIO *GPIOE = (struct _GPIO*) 0x40011800;
-volatile struct _GPIO *GPIOF = (struct _GPIO*) 0x40011C00;
-volatile struct _GPIO *GPIOG = (struct _GPIO*) 0x40012000;
+// =============================================================================
 
-////////////////////////////////////////////////////////////////////////////////////////
+extern volatile struct _GPIO *GPIOA;
+extern volatile struct _GPIO *GPIOB;
+extern volatile struct _GPIO *GPIOC;
+extern volatile struct _GPIO *GPIOD;
+extern volatile struct _GPIO *GPIOE;
+extern volatile struct _GPIO *GPIOF;
+extern volatile struct _GPIO *GPIOG;
+
+// =============================================================================
 
 #define CNF15   30
 #define CNF14   26
@@ -56,6 +62,5 @@ volatile struct _GPIO *GPIOG = (struct _GPIO*) 0x40012000;
 #define MODE2    8
 #define MODE1    4
 #define MODE0    0
-
 
 #endif
