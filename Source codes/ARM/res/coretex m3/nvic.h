@@ -1,3 +1,12 @@
+/*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-02-15
+ * nvic.c
+ * nvic °ü·Ã 
+ 
+*/
+
 #ifndef _NVIC_H
 #define _NVIC_H
 

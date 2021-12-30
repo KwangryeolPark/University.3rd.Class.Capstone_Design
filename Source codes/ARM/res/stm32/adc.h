@@ -1,3 +1,12 @@
+/*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-12-29
+ * adc.h
+ * adc °ü·Ã 
+ 
+*/
+
 #ifndef _ADC_H
 #define _ADC_H
 

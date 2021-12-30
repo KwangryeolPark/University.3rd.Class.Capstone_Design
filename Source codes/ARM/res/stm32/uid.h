@@ -1,3 +1,12 @@
+/*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-12-29
+ * uid.h
+ * Unique Identifier °ü·Ã 
+ 
+*/
+
 #ifndef _UID_H
 #define _UID_H
 

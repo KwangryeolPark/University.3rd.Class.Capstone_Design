@@ -1,3 +1,12 @@
+/*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-12-29
+ * gpio.c
+ * gpio °ü·Ã 
+ 
+*/
+
 #include "gpio.h"
 
 volatile struct _GPIO *GPIOA = (struct _GPIO*) 0x40010800;

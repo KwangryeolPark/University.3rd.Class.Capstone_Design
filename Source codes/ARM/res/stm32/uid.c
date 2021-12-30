@@ -1,3 +1,12 @@
+/*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-12-29
+ * uid.c
+ * Unique Identifier °ü·Ã 
+ 
+*/
+
 #include "uid.h"
 
 volatile struct _UID *UID = (struct _UID *) 0x1FFFF7E8;

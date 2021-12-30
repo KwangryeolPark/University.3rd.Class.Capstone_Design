@@ -1,3 +1,12 @@
+/*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-12-29
+ * gpio.h
+ * gpio °ü·Ã 
+ 
+*/
+
 #ifndef _GPIO_H
 #define _GPIO_H
 

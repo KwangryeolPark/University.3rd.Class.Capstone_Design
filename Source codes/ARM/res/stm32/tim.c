@@ -1,3 +1,12 @@
+/*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-12-29
+ * tim.c
+ * tim °ü·Ã 
+ 
+*/
+
 #include "tim.h"
 
 volatile struct _TIM *TIM1      = (struct _TIM*) 0x40012C00;

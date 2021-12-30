@@ -1,3 +1,13 @@
+/*
+ * 박광렬
+ * pkr7098@gmail.com
+ * 2021-12-30
+ * ir_structs.c
+ * IR의 자료구조 
+ 
+IR 네트워크의 자료구조에 관한 파일입니다. 
+*/
+
 #include "ir_structs.h"
 
 struct IR_FRAME IR_QUEUE_FRAME[IR_Q_SIZE];

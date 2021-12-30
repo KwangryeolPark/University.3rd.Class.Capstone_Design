@@ -1,3 +1,13 @@
+/*
+ * 박광렬
+ * pkr7098@gmail.com
+ * 2021-12-30
+ * ir_receive_psy.h
+ * IR의 수신기의 물리계 층 
+ 
+IR 네트워크의 물리계층에 관한 파일입니다.
+*/
+
 #include "ir_receive_psy.h"
 #include "printf.h"
 

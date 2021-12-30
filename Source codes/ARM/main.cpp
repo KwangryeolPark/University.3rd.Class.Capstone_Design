@@ -1,4 +1,10 @@
 /*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-12-28
+ * main.cpp
+
+
 SYSCLK        :       72 MHz
 APB1          :       36 MHz
 APB2          :       72 MHz

@@ -1,3 +1,12 @@
+/*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-12-29
+ * tim.h
+ * tim °ü·Ã 
+ 
+*/
+
 #ifndef _TIM_H
 #define _TIM_H
 
