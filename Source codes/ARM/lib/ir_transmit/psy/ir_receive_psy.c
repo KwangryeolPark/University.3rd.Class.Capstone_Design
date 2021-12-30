@@ -8,11 +8,20 @@
 #define IR_RECEIVE_CTRL_SET     GPIOB -> CRH    |=      (4 << 8)
 #define IR_RECEIVE_READ         (GPIOB -> IDR & (1 << 10))
 
+
 // =============================================================================
 
 volatile unsigned int IR_RECEIVE_COUNTER = 0;
-volatile unsigned int index = 0;
-volatile unsigned int msgs[1024] = {0, };
+volatile unsigned int IR_RECEIVE_READ_STEP = 0;
+volatile unsigned char IR_RECEIVE_TEMP_DATA_SIZE = 0;
+volatile unsigned char IR_RECEIVE_TEMP_DATA_BUFFER = 0;
+volatile unsigned int IR_RECEIVE_BIT_INDEX = 0;
+volatile unsigned int IR_RECEIVE_DATA_INDEX = 0;
+volatile struct IR_FRAME IR_RECEIVE_TEMP_FRAME;
+
+#define IR_RECEIVE_ISIDLE       (IR_RECEIVE_COUNTER > IR_RECEIVE_THRESHOLD_IDLE)
+#define IR_RECEIVE_ISONE        (IR_RECEIVE_COUNTER < IR_RECEIVE_THRESHOLD_ONE)
+#define IR_RECEIVE_ISZERO       (IR_RECEIVE_COUNTER > IR_RECEIVE_THRESHOLD_ZERO)
 
 // =============================================================================
 
@@ -30,9 +39,79 @@ void EXTI15_10_IRQHandler(void) { // EXTI10이 발생되면 호출되는 Handler입니다. (
   //Handler이름은 startup_stm32f10x_hd_vl.s에 정의되어 있습니다. 
   if(EXTI -> PR & (1 << 10)) {   // EXTI15 ~ 10중에 EXTI10이 발생된 것인지 확인합니다.
     EXTI -> PR |= (1 << 10);     // EXTI10가 한 번 발생되었기 때문에 다시 0으로 만들어 줍니다. (1을 write하면 하드웨어적으로 0으로 초기화 됩니다.)
-    if(index <= 1023) {
-      msgs[index++] = IR_RECEIVE_COUNTER;
+
+
+    msgs[index++] = IR_RECEIVE_READ_STEP;
+
+    
+    switch (IR_RECEIVE_READ_STEP) {
+    case IR_RECEIVE_STEP_IDLE:
+      if(IR_RECEIVE_ISIDLE) {
+        IR_RECEIVE_READ_STEP = IR_RECEIVE_STEP_START;
+      }
+      break;
+      
+    case IR_RECEIVE_STEP_START:
+      if(IR_RECEIVE_ISIDLE) {
+        IR_RECEIVE_READ_STEP = IR_RECEIVE_STEP_START;
+      } else if(IR_RECEIVE_ISONE) {
+        IR_RECEIVE_READ_STEP = IR_RECEIVE_STEP_GET_SIZE;
+        IR_RECEIVE_TEMP_DATA_SIZE = 0;
+        IR_RECEIVE_BIT_INDEX = 0;
+      } else {
+        IR_RECEIVE_READ_STEP = IR_RECEIVE_STEP_IDLE;
+      }
+      break;
+      
+    case IR_RECEIVE_STEP_GET_SIZE:
+      if(IR_RECEIVE_ISIDLE) {
+        IR_RECEIVE_READ_STEP = IR_RECEIVE_STEP_START;
+      }
+      IR_RECEIVE_TEMP_DATA_SIZE <<= 1;
+      if(IR_RECEIVE_ISONE) {
+        IR_RECEIVE_TEMP_DATA_SIZE += 1;
+      }
+      IR_RECEIVE_BIT_INDEX++;
+      
+      if(IR_RECEIVE_BIT_INDEX == 8) {
+        IR_RECEIVE_BIT_INDEX = 0;
+        IR_RECEIVE_DATA_INDEX = 0;
+        IR_RECEIVE_TEMP_DATA_BUFFER = 0;
+        IR_RECEIVE_READ_STEP = IR_RECEIVE_STEP_GET_DATA;
+      }
+      break;
+      
+    case IR_RECEIVE_STEP_GET_DATA:
+      if(IR_RECEIVE_ISIDLE) {
+        IR_RECEIVE_READ_STEP = IR_RECEIVE_STEP_START;
+      }
+        
+      IR_RECEIVE_TEMP_DATA_BUFFER <<= 1;
+      if(IR_RECEIVE_ISONE) {
+        IR_RECEIVE_TEMP_DATA_BUFFER += 1;
+      }
+      IR_RECEIVE_BIT_INDEX++;
+      
+      if (IR_RECEIVE_BIT_INDEX == 8) {
+        IR_RECEIVE_BIT_INDEX = 0;
+        IR_RECEIVE_TEMP_FRAME.p_datagram[IR_RECEIVE_DATA_INDEX++] = IR_RECEIVE_TEMP_DATA_BUFFER;
+        
+        if(IR_RECEIVE_DATA_INDEX == IR_RECEIVE_TEMP_DATA_SIZE) {
+          //
+          // DATA 넣는 코드
+          IR_RECEIVE_TEMP_FRAME.size_datagram = IR_RECEIVE_TEMP_DATA_SIZE;
+          ENQUEUE_IR_FRAME(IR_RECEIVE_TEMP_FRAME);
+          // DATA 넣는 코드
+          //
+          
+          IR_RECEIVE_READ_STEP = IR_RECEIVE_STEP_IDLE;
+        }
+      }
+      break;
+      
+      
     }
+    
     IR_RECEIVE_COUNTER = 0;
   }
 }
@@ -40,20 +119,20 @@ void EXTI15_10_IRQHandler(void) { // EXTI10이 발생되면 호출되는 Handler입니다. (
 
 void IR_RECEIVE_TIMER_INIT(void) {
   /*
-    Intialize TIM3 and set its clock to 74 KHz
+  Intialize TIM3 and set its clock to 74 KHz
   */
-
+  
   RCC ->        APB1ENR |=      (1 << 1);       //      Enable TIM3  
-
+  
   TIM3 ->       PSC     =       (72 - 1);       //      72,000,000 / (72 - 1 + 1) = 1 MHz
-  TIM3 ->       ARR     =       (50);           //      1 MHz / (50 - 1 + 1) = 20 KHz = 50 us
+  TIM3 ->       ARR     =       (25 - 1);       //      1 MHz / (25 - 1 + 1) = 40 KHz = 25 us
   TIM3 ->       CNT     =       0;              //      Initialize the TIM3 begin value
   TIM3 ->       SR      =       0;              //      Clear all status about TIM3
 }
 
 void IR_RECEIVE_TIMER_ENABLE(void) {
   /*
-    Enable TIM3
+  Enable TIM3
   */
   
   NVIC_ISER0            |=      (1 << 29);      //      Connect TIM3 to NVIC
@@ -61,7 +140,7 @@ void IR_RECEIVE_TIMER_ENABLE(void) {
   TIM3 ->       DIER    =       (1 << 0);       //      Activate TIM3 interrupt
   TIM3 ->       EGR     =       (1 << 0);       //      Notify the the registers are updated
   TIM3 ->       CR1     =       (1 << 0);       //      Begin TIM2
-
+  
 }
 void IR_RECEIVE_EXTI_INIT(void) {
   RCC ->        APB2ENR |=      (1 << AFIOEN);  //      Enable AFIO
@@ -88,6 +167,22 @@ void IR_RECEIVE_INIT(void) {
   IR_RECEIVE_PORT_INIT();
   IR_RECEIVE_TIMER_ENABLE();
   IR_RECEIVE_EXTI_ENABLE();
+  INIT_IR_FRAME();
+  IR_RECEIVE_TEMP_FRAME.size_datagram = 0;
+}
+
+uint8_t IR_RECEIVE_DECODER(uint8_t *buf) {
+  uint8_t data;
+  data = buf[0] << 7;
+  data |= buf[1] << 6;
+  data |= buf[2] << 5;
+  data |= buf[3] << 4;
+  data |= buf[4] << 3;
+  data |= buf[5] << 2;
+  data |= buf[6] << 1;
+  data |= buf[7];
+  
+  return data;
 }
 
 // =============================================================================

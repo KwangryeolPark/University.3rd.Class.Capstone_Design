@@ -53,7 +53,7 @@ void IR_TRANSMIT_MODULATION_TIMER_INIT(void) {
   RCC ->        APB1ENR |=      (1 << 0);       //      Enable TIM2  
 
   TIM2 ->       PSC     =       (9 - 1);        //      72,000,000 / (18 - 1 + 1) ~= 4 MHz
-  TIM2 ->       ARR     =       (100);          //      4 MHz / (100 - 1 + 1) = 80 KHz = 2 * 40 KHz
+  TIM2 ->       ARR     =       (100 - 1);      //      4 MHz / (100 - 1 + 1) = 80 KHz = 2 * 40 KHz
   TIM2 ->       CNT     =       0;              //      Initialize the TIM2 begin value
   TIM2 ->       SR      =       0;              //      Clear all status about TIM2  
 }
@@ -76,9 +76,10 @@ void IR_TRANSMIT_PORT_INIT(void) {
     Push-pull general output, 2 MHz mode
   */
   
-  IR_TRANSMIT_RCC_ENABLE;        //      Enable GPIOB
-  IR_TRANSMIT_CTRL_CLEAR;        //      Clear 11 settings
-  IR_TRANSMIT_CTRL_SET;          //      General ourput push-pull, 2 MHz
+  IR_TRANSMIT_RCC_ENABLE;       //      Enable GPIOB
+  IR_TRANSMIT_CTRL_CLEAR;       //      Clear 11 settings
+  IR_TRANSMIT_CTRL_SET;         //      General ourput push-pull, 2 MHz
+  IR_TRANSMIT_CLEAR;            //      Clear port
 }
 
 void IR_TRANSMIT_INIT(void) {
@@ -101,17 +102,15 @@ void IR_TRANSMIT_SIGNAL_ONE(void) {
       LOW     |  |  |  |_______
   */
 
-  IR_TRANSMIT_CLEAR;     //      Off the IR port
-  
   IR_TRANSMIT_CLEAR_FLAG;
   IR_TRANSMIT_CLEAR_COUNTER;
   IR_TRANSMIT_TOGGLE_UNTIL_FLAG_SET
   
+  IR_TRANSMIT_CLEAR;     //      Off the IR port
+  
   IR_TRANSMIT_CLEAR_FLAG;
   IR_TRANSMIT_CLEAR_COUNTER;
   IR_TRANSMIT_WAIT_UNTIL_FLAG_SET;       //      Wait for 500 us because the 'one' signal on and off have to wait for 500 us.
-
-  IR_TRANSMIT_CLEAR;     //      Off the IR port
 }
 
 void IR_TRANSMIT_SIGNAL_ZERO(void) {
@@ -128,8 +127,6 @@ void IR_TRANSMIT_SIGNAL_ZERO(void) {
       LOW     |  |  |  |______________
   */
 
-  IR_TRANSMIT_CLEAR;     //      Off the IR port
-  
   IR_TRANSMIT_CLEAR_FLAG;
   IR_TRANSMIT_CLEAR_COUNTER;
   IR_TRANSMIT_TOGGLE_UNTIL_FLAG_SET
@@ -137,11 +134,12 @@ void IR_TRANSMIT_SIGNAL_ZERO(void) {
   IR_TRANSMIT_CLEAR_FLAG;
   IR_TRANSMIT_CLEAR_COUNTER;
   IR_TRANSMIT_WAIT_UNTIL_FLAG_SET;       //      Wait for 500 us because the 'one' signal on and off have to wait for 500 us.
+
+  IR_TRANSMIT_CLEAR;     //      Off the IR port
+  
   IR_TRANSMIT_CLEAR_FLAG;
   IR_TRANSMIT_CLEAR_COUNTER;
   IR_TRANSMIT_WAIT_UNTIL_FLAG_SET;       //      Wait for 500 us because the 'one' signal on and off have to wait for 500 us.
-
-  IR_TRANSMIT_CLEAR;     //      Off the IR port
 }
 
 // =============================================================================
@@ -183,7 +181,7 @@ void IR_TRANSMIT_SEND_FRAME(struct IR_FRAME *frame) {
   const unsigned char size_datagram     =       frame -> size_datagram;
   unsigned char msg;
     
-  delay_ms(5);                  //      Distinguish the new frame
+  delay_ms(10);                  //      Distinguish the new frame
   
   IR_TRANSMIT_SIGNAL_ONE();       //      Start bit
 

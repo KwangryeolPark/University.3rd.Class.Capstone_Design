@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>4</fileVersion>
-    <fileChecksum>1915867738</fileChecksum>
+    <fileChecksum>16484997</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
@@ -64,9 +64,20 @@
             <file>$PROJ_DIR$\Debug\Obj\delay.xcl</file>
             <file>$PROJ_DIR$\Debug\Obj\gpio.xcl</file>
             <file>$PROJ_DIR$\Debug\Obj\startup_stm32f10x_hd_vl.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
             <file>$PROJ_DIR$\Debug\Obj\printf.o</file>
             <file>$PROJ_DIR$\Debug\Obj\printf.xcl</file>
+            <file>$PROJ_DIR$\lib\ir_transmit\ir_structs.c</file>
             <file>$PROJ_DIR$\lib\printf\printf.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\ir_structs.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\ir_structs.o</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
@@ -99,10 +110,6 @@
         <file>
             <name>$PROJ_DIR$\lib\ir_transmit\psy\ir_receive_psy.c</name>
             <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 55</file>
-                </tool>
                 <tool>
                     <name>BICOMP</name>
                     <file> 51</file>
@@ -230,17 +237,13 @@
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 15 44 24 16 45 53 55 39 36 59 49 58 50 37 42 38 34 20 52</file>
+                    <file> 15 44 24 16 45 53 55 72 39 36 67 49 58 50 37 42 38 34 20 52</file>
                 </tool>
             </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\main.cpp</name>
             <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 36</file>
-                </tool>
                 <tool>
                     <name>__cstat</name>
                     <file> 46</file>
@@ -253,7 +256,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 10 14 19 13 2 1 9 28 5 11 32 29 23</file>
+                    <file> 10 14 19 13 2 1 9 28 5 11 32 29 23 60 66 65 64 61 59 63 62</file>
                 </tool>
             </inputs>
         </file>
@@ -315,15 +318,34 @@
             </inputs>
         </file>
         <file>
+            <name>$PROJ_DIR$\lib\ir_transmit\ir_structs.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 72</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 71</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 28</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
             <name>$PROJ_DIR$\lib\printf\printf.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 59</file>
+                    <file> 67</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 60</file>
+                    <file> 68</file>
                 </tool>
             </outputs>
             <inputs>
@@ -333,6 +355,10 @@
                 </tool>
             </inputs>
         </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
     </configuration>
     <configuration>
         <name>Release</name>

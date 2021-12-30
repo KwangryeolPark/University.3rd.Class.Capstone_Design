@@ -2874,6 +2874,9 @@
                 </file>
             </group>
             <file>
+                <name>$PROJ_DIR$\lib\ir_transmit\ir_structs.c</name>
+            </file>
+            <file>
                 <name>$PROJ_DIR$\lib\ir_transmit\ir_structs.h</name>
             </file>
         </group>

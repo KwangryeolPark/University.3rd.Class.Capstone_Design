@@ -30,7 +30,7 @@ void DELAY_TIMER_INIT(void) {
   RCC ->        APB1ENR |=      (1 << 2);       //      Enable TIM4
   
   TIM4 ->       PSC     =       (72 - 1);       //      72,000,000 / (72 - 1 + 1) = 1 MHz
-  TIM4 ->       ARR     =       (10);           //      1 MHz / (10 - 1 + 1) = 100 KHz
+  TIM4 ->       ARR     =       (10 - 1);       //      1 MHz / (10 - 1 + 1) = 100 KHz
   TIM4 ->       CNT     =       0;              //      Initialize the TIM4 begin value
   TIM4 ->       SR      =       0;              //      Clear all status about TIM2
 }
