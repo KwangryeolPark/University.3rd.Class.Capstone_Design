@@ -1,3 +1,12 @@
+/*
+ * 박광렬
+ * pkr7098@gmail.com
+ * 2021-12-29
+ * typedef.h
+ * 타입 관련 
+ 
+*/
+
 #ifndef _TYPEDEF_H
 #define _TYPEDEF_H
 

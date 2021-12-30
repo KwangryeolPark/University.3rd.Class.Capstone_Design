@@ -1,3 +1,12 @@
+/*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-12-29
+ * device_type.h
+ * device type °ü·Ã 
+ 
+*/
+
 #ifndef _DEVICE_TYPE_H
 #define _DEVICE_TYPE_H
 

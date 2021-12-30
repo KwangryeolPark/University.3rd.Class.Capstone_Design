@@ -1,3 +1,12 @@
+/*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-12-29
+ * afio.h
+ * afio °ü·Ã 
+ 
+*/
+
 #ifndef _AFIO_H
 #define _AFIO_H
 

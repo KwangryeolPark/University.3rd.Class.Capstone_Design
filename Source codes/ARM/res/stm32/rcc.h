@@ -1,3 +1,12 @@
+/*
+ * ¹Ú±¤·Ä
+ * pkr7098@gmail.com
+ * 2021-12-29
+ * rcc.h
+ * rcc °ü·Ã 
+ 
+*/
+
 #ifndef _RCC_H
 #define _RCC_H
 
