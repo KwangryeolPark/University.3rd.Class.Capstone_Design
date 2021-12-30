@@ -18,7 +18,7 @@ IR 네트워크의 물리계층에 관한 파일입니다.
 
 // =============================================================================
 
-#define IR_RECEIVE_THRESHOLD_IDLE       130
+#define IR_RECEIVE_THRESHOLD_IDLE       70
 #define IR_RECEIVE_THRESHOLD_ONE        50
 #define IR_RECEIVE_THRESHOLD_ZERO       IR_RECEIVE_THRESHOLD_ONE
 
@@ -28,10 +28,6 @@ IR 네트워크의 물리계층에 관한 파일입니다.
 #define IR_RECEIVE_STEP_GET_DATA        3
 
 // =============================================================================
-
-extern volatile unsigned int IR_RECEIVE_COUNTER;
-extern volatile unsigned int msgs[1024];
-extern volatile unsigned int index;
 
 // =============================================================================
 

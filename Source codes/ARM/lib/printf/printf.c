@@ -3,13 +3,14 @@
 // =============================================================================
 
 void USART2_INIT(void) {
+  USART2 -> DR          =       0;
   RCC -> APB2ENR        |=      (1 << AFIOEN) | (1 << IOPAEN);
   GPIOA -> CRL          &=      ~((0xF << MODE2) | (0xF << MODE3));
   GPIOA -> CRL          |=      (11 << MODE2) | (4 << MODE3);
   RCC -> APB1ENR        |=      (1 << USART2EN);
 
-  USART2 -> BRR = (19 << 4) | 8;
-  USART2 -> CR1 = (1 << UE) | (1 << TE);                                        // USART enable, Transmit & Receive enable
+  USART2 -> BRR         =       (19 << 4) | 8;
+  USART2 -> CR1         =       (1 << UE) | (1 << TE);                          // USART enable, Transmit & Receive enable
 }
 
 int putc(struct _USART volatile *UART, int c) {

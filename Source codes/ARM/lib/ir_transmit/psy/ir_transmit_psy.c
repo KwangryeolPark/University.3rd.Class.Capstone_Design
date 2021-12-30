@@ -121,6 +121,7 @@ void IR_TRANSMIT_INIT(void) {                                                   
   */
   IR_TRANSMIT_MODULATION_TIMER_INIT();                                          //      Initialize TIM2
   IR_TRANSMIT_PORT_INIT();                                                      //      Set IR port
+  IR_TRANSMIT_CLEAR;                                                            //      Off the IR port for LOW state
   IR_TRANSMIT_MODULATION_TIMER_ENABLE();                                        //      Enable TIM2
 }
 
@@ -152,7 +153,7 @@ void IR_TRANSMIT_SIGNAL_ONE(void) {                                             
   IR_TRANSMIT_WAIT_UNTIL_FLAG_SET;                                              //      Wait for 500 us because the 'one' signal on and off have to wait for 500 us.
 }
 
-void IR_TRANSMIT_SIGNAL_ZERO(void) {{                                           //      Generate a 0 signal modulated to 40 KHz
+void IR_TRANSMIT_SIGNAL_ZERO(void) {                                            //      Generate a 0 signal modulated to 40 KHz
   /*
     Generate a 0 signal modulated to 40 KHz
 
@@ -169,7 +170,7 @@ void IR_TRANSMIT_SIGNAL_ZERO(void) {{                                           
   //    Stay TOGGLING state for 500 us
   IR_TRANSMIT_CLEAR_FLAG;                                                       //      Clear flag for waiting 500 us
   IR_TRANSMIT_CLEAR_COUNTER;                                                    //      Clear counter for correct action, waiting 500 us
-  IR_TRANSMIT_TOGGLE_UNTIL_FLAG_SET                                             //      Wait 500 us
+  IR_TRANSMIT_TOGGLE_UNTIL_FLAG_SET;                                            //      Wait 500 us
   
   //    Stay LOW state for 1000 us
   IR_TRANSMIT_CLEAR;                                                            //      Off the IR port for LOW state
@@ -219,11 +220,11 @@ void IR_TRANSMIT_SEND_FRAME(struct IR_FRAME *frame) {                           
     bits        1               8       size * 8        1
   */
   
-  const unsigned char *p_datagram       =       (unsigned char *)       frame -> p_datagram;    //      Datagram
+  const unsigned char *p_datagram       =       frame -> p_datagram;            //      Datagram
   const unsigned char size_datagram     =       frame -> size_datagram;         //      The size of datagram
   unsigned char msg;                                                            //      Message value which is extraced from datagram
     
-  delay_ms(10);                                                                 //      Distinguish the new frame
+  delay_ms(5);                                                                 //      Distinguish the new frame
   
   //    Start transmitting
   IR_TRANSMIT_SIGNAL_ONE();                                                     //      Send start bit (1)

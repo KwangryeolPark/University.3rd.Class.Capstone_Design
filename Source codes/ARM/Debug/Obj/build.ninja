@@ -27,16 +27,18 @@ build printf.pbi : index printf.xcl
 build adc.pbi : index adc.xcl
 build afio.pbi : index afio.xcl
 build delay.pbi : index delay.xcl
+build device_type.pbi : index device_type.xcl
 build exti.pbi : index exti.xcl
 build gpio.pbi : index gpio.xcl
 build rcc.pbi : index rcc.xcl
 build tim.pbi : index tim.xcl
+build uid.pbi : index uid.xcl
 build usart.pbi : index usart.xcl
 build main.pbi : index main.xcl
 build arm_part0.pbi : link ir_receive_psy.pbi ir_transmit_psy.pbi ir_structs.pbi printf.pbi
-build arm_part1.pbi : link adc.pbi afio.pbi delay.pbi exti.pbi
-build arm_part2.pbi : link gpio.pbi rcc.pbi tim.pbi usart.pbi
-build arm_part3.pbi : link main.pbi
+build arm_part1.pbi : link adc.pbi afio.pbi delay.pbi device_type.pbi
+build arm_part2.pbi : link exti.pbi gpio.pbi rcc.pbi tim.pbi
+build arm_part3.pbi : link uid.pbi usart.pbi main.pbi
 build arm.pbd : link arm_part0.pbi arm_part1.pbi arm_part2.pbi arm_part3.pbi
 build arm.pbw : browsedata arm.pbd
 

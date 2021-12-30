@@ -1,4 +1,5 @@
 #include "ir_receive_psy.h"
+#include "printf.h"
 
 // =============================================================================
 
@@ -40,10 +41,6 @@ void EXTI15_10_IRQHandler(void) { // EXTI10이 발생되면 호출되는 Handler입니다. (
   if(EXTI -> PR & (1 << 10)) {   // EXTI15 ~ 10중에 EXTI10이 발생된 것인지 확인합니다.
     EXTI -> PR |= (1 << 10);     // EXTI10가 한 번 발생되었기 때문에 다시 0으로 만들어 줍니다. (1을 write하면 하드웨어적으로 0으로 초기화 됩니다.)
 
-
-    msgs[index++] = IR_RECEIVE_READ_STEP;
-
-    
     switch (IR_RECEIVE_READ_STEP) {
     case IR_RECEIVE_STEP_IDLE:
       if(IR_RECEIVE_ISIDLE) {
@@ -97,19 +94,16 @@ void EXTI15_10_IRQHandler(void) { // EXTI10이 발생되면 호출되는 Handler입니다. (
         IR_RECEIVE_TEMP_FRAME.p_datagram[IR_RECEIVE_DATA_INDEX++] = IR_RECEIVE_TEMP_DATA_BUFFER;
         
         if(IR_RECEIVE_DATA_INDEX == IR_RECEIVE_TEMP_DATA_SIZE) {
-          //
+          
           // DATA 넣는 코드
           IR_RECEIVE_TEMP_FRAME.size_datagram = IR_RECEIVE_TEMP_DATA_SIZE;
-          ENQUEUE_IR_FRAME(IR_RECEIVE_TEMP_FRAME);
+          ENQUEUE_SUITABLE_IR_FRAME(&IR_RECEIVE_TEMP_FRAME);
           // DATA 넣는 코드
-          //
           
           IR_RECEIVE_READ_STEP = IR_RECEIVE_STEP_IDLE;
         }
       }
       break;
-      
-      
     }
     
     IR_RECEIVE_COUNTER = 0;

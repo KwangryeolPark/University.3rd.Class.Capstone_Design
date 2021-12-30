@@ -23,28 +23,43 @@ TIM7 is for delay_ms.
 #include "printf.h"
 #include "usart.h"
 #include "string.h"
+#include "uid.h"
+#include "device_type.h"
 
 void RCC_INIT(void);
+void SystemInit(void);
+
+uint8_t uid;                                                                    //      System Unique Indentifier
 
 int main(void) {
-  RCC_INIT();
-  DELAY_INIT();
-  IR_TRANSMIT_INIT();
-  IR_RECEIVE_INIT();
-  USART2_INIT();
+  SystemInit();
+  putclear();
+  putclear();
+  putclear();
+  printf("Density      \t: %c\n", DEVICE_TYPE_GET_TYPE());
+  printf("Flash size   \t: %dK\n", DEVICE_TYPE_GET_FLASH_SIZE());
+  printf("Serial number\t: %x-%x-%x\n", UID_GET_WORD(2), UID_GET_WORD(1), UID_GET_WORD(0));
+  printf("=====================================\n");
   
-  struct IR_FRAME frame;
-  strcpy((char *) frame.p_datagram, "aj");
-  frame.size_datagram = 3;
-  for (int j = 0; j < 1000; j) {
-    IR_TRANSMIT_SEND_FRAME(&frame);
-    
-    
-    
-    delay_ms(1000);
+  uid = UID_GET_BYTE(0);
+  
+  struct IR_FRAME send_frame;
+  struct IR_FRAME *recv_frame;
+  strcpy((char *) send_frame.p_datagram, "Hello_World0");
+  send_frame.size_datagram = 13;
+
+  
+  for (int i = 0; i < 40; i++) {
+    send_frame.p_datagram[11] = 'a' + i;
+    IR_TRANSMIT_SEND_FRAME(&send_frame);
   }
   
-  while (1);
+  for (int i = 0; i < 8; i++) {
+    recv_frame = DEQUEUE_IR_FRAME();
+    printf("Data size: %3d, msg: %s\n", recv_frame -> size_datagram, recv_frame -> p_datagram);
+  }
+  
+  return 0;
 }
 
 
@@ -52,7 +67,13 @@ int main(void) {
 
 
 
-
+void SystemInit(void) {
+  RCC_INIT();
+  USART2_INIT();
+  DELAY_INIT();
+  IR_TRANSMIT_INIT();
+  IR_RECEIVE_INIT();
+}
 
 
 
@@ -83,12 +104,12 @@ void RCC_INIT(void) {                                                           
   RCC ->        CR      |=      (0x83);                                         //      Reset value
   
   RCC ->        CR      |=      (1 << 16);                                      //      HSEON
-  while(!(RCC -> CR & (1 << 17)));                                              //      Waiting for HSE ready
+//  while(!(RCC -> CR & (1 << 17)));                                              //      Waiting for HSE ready
   
   RCC ->        CR      |=      (1 << 24);                                      //      PLLON
-  while(!(RCC -> CR & (1 << 25)));                                              //      Waiting for PLL ready
+//  while(!(RCC -> CR & (1 << 25)));                                              //      Waiting for PLL ready
   
   RCC ->        CFGR    |=      (2 << 0);                                       //      SW
-  while(((RCC -> CFGR >> 2) & 0x03) != (2 << 0));                               //      waiting for SW ready
+//  while(((RCC -> CFGR >> 2) & 0x03) != (2 << 0));                               //      waiting for SW ready
 }
 

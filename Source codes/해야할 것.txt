@@ -3,7 +3,7 @@
 
 **1. IR transmit 계층 나누기		-> 계층 분할 후, ir_transmit_psy.h와 ir_transmit_psy.c로 코드 분할.
 **2. delay 타이머 관련 문제 해결하기	-> TIM7을 TIM4로 수정하여 해결
-*3. IR receive 계층 만들기		-> 부분 완성, Q를 생성하여 받은 메시지를 저장하는 단계
+**3. IR receive 계층 만들기		-> 부분 완성, Q를 생성하여 받은 메시지를 저장하는 단계 -> 32개의 메시지를 담을 수 있는 Q 생성
 4. IR datalink 계층 만들기
 5. IR receiver 부분에 ADC 구현하기
-*6. IR 통신 안정화시키기 (값이 너무 튐)
+**6. IR 통신 안정화시키기 (값이 너무 튐)	-> IR_TRANSMIT_SIGNAL_ZERO에서 IR_TRANSMIT_CLEAR의 위치가 잘못되어 있었음. -> (어느정도 성능 좋아짐)
