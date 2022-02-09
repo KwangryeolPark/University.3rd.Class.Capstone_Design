@@ -1,0 +1,25 @@
+5mm IR LED
+	직경 5mm
+	길이 37mm
+	파장 940nm
+	순방향 전압 1.2 - 1.4V
+	정방향 전휴 100mA
+	https://ko.aliexpress.com/item/1005002402135348.html?gatewayAdapt=glo2kor&spm=a2g0o.9042311.0.0.373c4c4dwRpbg9
+
+IR receiver
+	모델 명 TL1838
+	변조 주파수 38 kHz
+	https://ko.aliexpress.com/item/1005002428775329.html?gatewayAdapt=glo2kor&spm=a2g0o.9042311.0.0.373c4c4dwRpbg9
+
+Light sensor
+	모델 명 TEPT5700
+	https://www.aliexpress.com/snapshot/0.html?spm=a2g0o.9042311.0.0.373c4c4dwRpbg9&orderId=8136982476305206&productId=32685821333
+
+Motor driver
+	모델 명 DRV8833
+	동작 전압 2.7 - 11.8V
+	https://ko.aliexpress.com/item/32804187775.html?gatewayAdapt=glo2kor&spm=a2g0o.9042311.0.0.373c4c4dwRpbg9
+
+Temp sensor
+	모델 명 DS18B20 DS18B20 18B20 TO92
+	https://ko.aliexpress.com/item/1966010965.html?gatewayAdapt=glo2kor&spm=a2g0o.9042311.0.0.373c4c4dwRpbg9

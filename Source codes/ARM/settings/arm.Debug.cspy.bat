@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\settings\arm.Debug.general.xcl" --backend -f "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\settings\arm.Debug.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "E:\대학\상명대\3학년\2학기\University.3rd.Class.Capstone_Design\Source codes\ARM\settings\arm.Debug.general.xcl" --backend -f "E:\대학\상명대\3학년\2학기\University.3rd.Class.Capstone_Design\Source codes\ARM\settings\arm.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\settings\arm.Debug.general.xcl" "--debug_file=%~1" --backend -f "H:\대학\3학년\2학기\University.3rd.Class.Capston_Design\Source codes\ARM\settings\arm.Debug.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "E:\대학\상명대\3학년\2학기\University.3rd.Class.Capstone_Design\Source codes\ARM\settings\arm.Debug.general.xcl" "--debug_file=%~1" --backend -f "E:\대학\상명대\3학년\2학기\University.3rd.Class.Capstone_Design\Source codes\ARM\settings\arm.Debug.driver.xcl" 
 
 @echo off 
 :end

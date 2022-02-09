@@ -5,6 +5,9 @@
  * ir_trs.h
  * IR의 데이터링크 계 층 
 
+ADC           :       12 MHz
+12bits
+
 */
 
 #ifndef _IR_TRS_H
