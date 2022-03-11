@@ -1,62 +1,203 @@
-#ifndef _trilateration_h
-#define _trilateration_h
+/******************************************************************************
 
-#include "location.h"
-#include "error.h"
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
 
-// ================================================================================
+*******************************************************************************/
 
-Location getLocation(Location location1, Location location2, float distance23, float distance31);
-//Location getLocation(Location location1, Location location2, Location location3, float distance1, float distance2, float distance3);
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
 
-// ================================================================================
+#define PI 3.14159265359
 
-Location getLocation(Location location1, Location location2, float distance23, float distance31)
+double dist1, dist2, dist3;
+
+typedef struct {
+    double x, y;
+} Location;
+
+void initLocation(Location* p);
+void setLocation(Location* p, double x, double y);
+void showLocation(Location* p);
+double getDistance(Location* p1, Location* p2);
+Location rotation2(Location* p, double radian);
+void rotation(Location* p, double radian);
+double getRadian(Location* p);
+Location get3rdStandardLocation(double dist1, double dist2, double dist3);
+Location getMyLocation(const Location *p[3], double dist[3]);
+
+int main()
 {
-    /*  Algorithm
-        A -> location1
-        B -> location2
-        C -> result location
+    dist1 = 3.0;
+    dist2 = 4.0;
+    dist3 = 5.0;
 
-        BC -> distance2
-        CA -> distance3
-
-        코사인 2법칙 이용
-
-    */
-    Location location3;
-
-    float distance12 = distanceF(location1, location2);
-    float cos = float(distance12 * distance12 + distance31 * distance31 - distance23 * distance23) / float(2.0 * distance12 * distance31);
-
-    location3.x = cos * distance31;
-    location3.y = sqrt(1 - cos * cos) * distance31;
-
-    return location3;
-}
-
-Location getLocation(Location location1, Location location2, Location location3, float distance1, float distance2, float distance3)
-{
-    /*  Algorithm
+    Location p1, p2, p3;
+    initLocation(&p1);
+    initLocation(&p2);
+    initLocation(&p3);
     
+    setLocation(&p1, 0, 0);
+    setLocation(&p2, dist2, 0);
 
-        삼변측량법 사용
+    double COS = (dist1 * dist1 + dist3 * dist3 - dist2 * dist2) / (2.0 * dist1 * dist3);
+    setLocation(&p3, COS * dist3, sqrt(1.0 - COS * COS) * dist3);
 
-    */
-    Location locationT;
+    printf("Standard position:\n\t");
+    showLocation(&p1);
+    showLocation(&p2);
+    showLocation(&p3);
+    printf("\n");
 
-    float X01 = (-2 * location1.x + 2 * location2.x);
-    float X11 = ((location1.x + location2.x) * (location1.x - location2.x) + (location1.y + location2.y) * (location1.y - location2.y) + (distance2 + distance1) * (distance2 - distance1));
-    float Y1 = (-2 * location1.y + 2 * location2.y);
 
-    float X02 = (-2 * location1.x + 2 * location3.x);
-    float X12 = ((location1.x + location3.x) * (location1.x - location3.x) + (location1.y + location3.y) * (location1.y - location3.y) + (distance3 + distance1) * (distance3 - distance1));
-    float Y2 = (-2 * location1.y + 2 * location3.y);
 
-    locationT.x = (Y2 * X01 - Y1 * X02) / (X12 * Y1 - X11 * Y2);
-    locationT.y = (locationT.x * X01 + X11) / (Y1);
 
-    return locationT;
+
+    Location current;
+    double pd1, pd2, pd3;
+    pd1 = 6.7082039325;
+    pd2 = 3.6055512755;
+    pd3 = 7.6157731059;
+
+    initLocation(&current);
+    
+    dist1 = getDistance(&p1, &p2);
+    double COS_THETA = -(pd2 * pd2 - pd1 * pd1 - dist1 * dist1) / (2 * pd1 * dist1);
+    double SIN_THETA = sqrt(1 - COS_THETA * COS_THETA);
+    Location predL1, predL2;
+    setLocation(&predL1, COS_THETA * pd1, SIN_THETA * pd1);
+    setLocation(&predL1, COS_THETA * pd1, -SIN_THETA * pd1);
+
+    double dist_1 = abs(getDistance(&predL1, &p3) - pd3);
+    printf("Node #4 position:\n\t");
+    if (dist_1 > abs(getDistance(&predL2, &p3) - pd3)) {
+        showLocation(&predL2);
+    } else {
+        showLocation(&predL1);
+    }
+
+
+
+
+
+
+
+
+
+
+    Location t;
+    setLocation(&t, 1, 1);
+    printf("\n");
+    printf("%.10f", getRadian(&t));
+
+
+
+    return 0;
 }
 
-#endif
+Location get3rdStandardLocation(double dist1, double dist2, double dist3) {
+    Location p3;
+    
+    double COS = (dist1 * dist1 + dist3 * dist3 - dist2 * dist2) / (2.0 * dist1 * dist3);
+    setLocation(&p3, COS * dist3, sqrt(1.0 - COS * COS) * dist3);
+
+    return p3;
+};
+
+Location getMyLocation(const Location *p[3], double dist[3]) {
+    
+    Location rotatedP[3];
+    rotatedP[2].x = &p[2] -> x - &p[0] -> x;
+    rotatedP[2].y = &p[2] -> y - &p[0] -> y;
+    rotatedP[1].x = &p[1] -> x - &p[0] -> x;
+    rotatedP[1].y = &p[1] -> y - &p[0] -> y;
+    rotatedP[0].x = 0;
+    rotatedP[0].y = 0;
+    
+    double theta = getRadian(&rotatedP[1]);
+    rotation(&rotatedP[1], theta);
+    rotation(&rotatedP[2], theta);
+    
+    
+    double distB = getDistance(&rotatedP[0], &rotatedP[1]);       //  Distance between 2 Standard nodes
+    double COS_THETA = -(dist[1] * dist[1] - dist[0] * dist[0] - distB * distB) / (2 * dist[0] * distB);
+    double SIN_THETA = sqrt(1 - COS_THETA * COS_THETA);
+    Location predL1, predL2;            //  Predicted locations
+    setLocation(&predL1, COS_THETA * dist[0], SIN_THETA * dist[0]);
+    setLocation(&predL1, COS_THETA * dist[0], -SIN_THETA * dist[0]);
+
+    double dist_1 = abs(getDistance(&predL1, &rotatedP[2]) - dist3);
+    if (dist_1 > abs(getDistance(&predL2, &rotatedP[2]) - dist3)) {
+        return rotation(&predL2, -theta);
+    }
+    return rotation(&predL1, -theta);
+}
+
+
+
+
+void initLocation(Location* p) {
+    p -> x = 0;
+    p -> y = 0;
+};
+
+void setLocation(Location* p, double x, double y) {
+    p -> x = x;
+    p -> y = y;
+};
+
+void showLocation(Location* p) {
+    printf("(%.3f, %.3f)\t", p -> x, p -> y);
+};
+
+double getDistance(Location* p1, Location* p2) {
+    double dx = (p1 -> x) - (p2 -> x);
+    double dy = (p1 -> y) - (p2 -> y);
+    
+    return sqrt((dx * dx) + (dy * dy));
+};
+
+Location rotation2(Location* p, double radian) {
+    double COS = cos(radian);
+    double SIN = sin(radian);
+    double x = p -> x;
+    double y = p -> y;
+
+    Location result;
+    result.x = x * COS - y * SIN;
+    result.y = x * SIN + y * COS;
+    
+    return result;
+};
+
+void rotation(Location* p, double radian) {
+    double COS = cos(radian);
+    double SIN = sin(radian);
+    double x = p -> x;
+    double y = p -> y;
+
+    p -> x = p -> x * COS - p -> y * SIN;
+    p -> y = p -> x * SIN + p -> y * COS;
+};
+
+double getRadian(Location* p) {
+    double x = p -> x;
+    double y = p -> y;
+    
+    if (x == 0) {
+        if (y == 0) {
+            return 0;
+        } else if (y > 0) {
+            return PI;
+        }
+        return -PI;
+    }
+    
+    double theta = atan(y / x);
+    if (x < 0) {
+        return theta + 2.0 * PI;
+    }
+    return theta;
+}

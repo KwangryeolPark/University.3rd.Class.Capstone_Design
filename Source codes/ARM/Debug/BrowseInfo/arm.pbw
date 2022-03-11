@@ -21494,6 +21494,34 @@
         "scope": "IR_SEGMENT"
       },
       {
+        "ID": "c:@S@IR_SEGMENT@FI@p_segment",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "p_segment",
+        "location": {
+          "column": "17",
+          "line": "17",
+          "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+        },
+        "name": "p_segment",
+        "origin": "user_include",
+        "scope": "IR_SEGMENT"
+      },
+      {
+        "ID": "c:@S@IR_SEGMENT@FI@p_msg",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "p_msg",
+        "location": {
+          "column": "34",
+          "line": "17",
+          "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+        },
+        "name": "p_msg",
+        "origin": "user_include",
+        "scope": "IR_SEGMENT"
+      },
+      {
         "ID": "c:@S@IR_SEGMENT@FI@recv_id",
         "What": "FieldDecl",
         "defdec": "Def",
@@ -21508,6 +21536,20 @@
         "scope": "IR_SEGMENT"
       },
       {
+        "ID": "c:@S@IR_SEGMENT@FI@send_id",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "send_id",
+        "location": {
+          "column": "17",
+          "line": "18",
+          "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+        },
+        "name": "send_id",
+        "origin": "user_include",
+        "scope": "IR_SEGMENT"
+      },
+      {
         "ID": "c:@S@IR_SEGMENT@FI@p_msg",
         "What": "FieldDecl",
         "defdec": "Def",
@@ -21518,6 +21560,20 @@
           "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
         },
         "name": "p_msg",
+        "origin": "user_include",
+        "scope": "IR_SEGMENT"
+      },
+      {
+        "ID": "c:@S@IR_SEGMENT@FI@recv_id",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "recv_id",
+        "location": {
+          "column": "17",
+          "line": "19",
+          "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+        },
+        "name": "recv_id",
         "origin": "user_include",
         "scope": "IR_SEGMENT"
       }
@@ -21538,44 +21594,116 @@
     },
     "members": [
       {
-        "ID": "c:@S@IR_DATAGRAM@FI@p_segment",
-        "What": "FieldDecl",
+        "ID": "c:@S@IR_DATAGRAM",
+        "What": "Struct",
         "defdec": "Def",
-        "display": "p_segment",
+        "display": "IR_DATAGRAM",
         "location": {
-          "column": "9",
-          "line": "23",
+          "column": "8",
+          "line": "22",
           "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
         },
-        "name": "p_segment",
-        "origin": "user_include",
-        "scope": "IR_DATAGRAM"
-      },
-      {
-        "ID": "c:@S@IR_DATAGRAM@FI@parity",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "parity",
-        "location": {
-          "column": "17",
-          "line": "24",
-          "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
-        },
-        "name": "parity",
-        "origin": "user_include",
-        "scope": "IR_DATAGRAM"
-      },
-      {
-        "ID": "c:@S@IR_DATAGRAM@FI@size_segment",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "size_segment",
-        "location": {
-          "column": "17",
-          "line": "25",
-          "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
-        },
-        "name": "size_segment",
+        "members": [
+          {
+            "ID": "c:@S@IR_DATAGRAM@FI@p_segment",
+            "What": "FieldDecl",
+            "defdec": "Def",
+            "display": "p_segment",
+            "location": {
+              "column": "9",
+              "line": "23",
+              "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+            },
+            "name": "p_segment",
+            "origin": "user_include",
+            "scope": "IR_DATAGRAM::IR_DATAGRAM"
+          },
+          {
+            "ID": "c:@S@IR_DATAGRAM@FI@p_segment",
+            "What": "FieldDecl",
+            "defdec": "Def",
+            "display": "p_segment",
+            "location": {
+              "column": "17",
+              "line": "23",
+              "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+            },
+            "name": "p_segment",
+            "origin": "user_include",
+            "scope": "IR_DATAGRAM::IR_DATAGRAM"
+          },
+          {
+            "ID": "c:@S@IR_DATAGRAM@FI@mac",
+            "What": "FieldDecl",
+            "defdec": "Def",
+            "display": "mac",
+            "location": {
+              "column": "17",
+              "line": "24",
+              "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+            },
+            "name": "mac",
+            "origin": "user_include",
+            "scope": "IR_DATAGRAM::IR_DATAGRAM"
+          },
+          {
+            "ID": "c:@S@IR_DATAGRAM@FI@parity",
+            "What": "FieldDecl",
+            "defdec": "Def",
+            "display": "parity",
+            "location": {
+              "column": "17",
+              "line": "24",
+              "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+            },
+            "name": "parity",
+            "origin": "user_include",
+            "scope": "IR_DATAGRAM::IR_DATAGRAM"
+          },
+          {
+            "ID": "c:@S@IR_DATAGRAM@FI@parity",
+            "What": "FieldDecl",
+            "defdec": "Def",
+            "display": "parity",
+            "location": {
+              "column": "17",
+              "line": "25",
+              "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+            },
+            "name": "parity",
+            "origin": "user_include",
+            "scope": "IR_DATAGRAM::IR_DATAGRAM"
+          },
+          {
+            "ID": "c:@S@IR_DATAGRAM@FI@size_segment",
+            "What": "FieldDecl",
+            "defdec": "Def",
+            "display": "size_segment",
+            "location": {
+              "column": "17",
+              "line": "25",
+              "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+            },
+            "name": "size_segment",
+            "origin": "user_include",
+            "scope": "IR_DATAGRAM::IR_DATAGRAM"
+          },
+          {
+            "ID": "c:@S@IR_DATAGRAM@FI@size_segment",
+            "What": "FieldDecl",
+            "defdec": "Def",
+            "display": "size_segment",
+            "location": {
+              "column": "17",
+              "line": "26",
+              "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+            },
+            "name": "size_segment",
+            "origin": "user_include",
+            "scope": "IR_DATAGRAM::IR_DATAGRAM"
+          }
+        ],
+        "name": "IR_DATAGRAM",
         "origin": "user_include",
         "scope": "IR_DATAGRAM"
       }
@@ -21596,30 +21724,74 @@
     },
     "members": [
       {
-        "ID": "c:@S@IR_FRAME@FI@p_datagram",
-        "What": "FieldDecl",
+        "ID": "c:@S@IR_FRAME",
+        "What": "Struct",
         "defdec": "Def",
-        "display": "p_datagram",
+        "display": "IR_FRAME",
         "location": {
-          "column": "17",
+          "column": "8",
           "line": "29",
           "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
         },
-        "name": "p_datagram",
-        "origin": "user_include",
-        "scope": "IR_FRAME"
-      },
-      {
-        "ID": "c:@S@IR_FRAME@FI@size_datagram",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "size_datagram",
-        "location": {
-          "column": "17",
-          "line": "30",
-          "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
-        },
-        "name": "size_datagram",
+        "members": [
+          {
+            "ID": "c:@S@IR_FRAME@FI@p_datagram",
+            "What": "FieldDecl",
+            "defdec": "Def",
+            "display": "p_datagram",
+            "location": {
+              "column": "17",
+              "line": "29",
+              "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+            },
+            "name": "p_datagram",
+            "origin": "user_include",
+            "scope": "IR_FRAME::IR_FRAME"
+          },
+          {
+            "ID": "c:@S@IR_FRAME@FI@size_datagram",
+            "What": "FieldDecl",
+            "defdec": "Def",
+            "display": "size_datagram",
+            "location": {
+              "column": "17",
+              "line": "30",
+              "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+            },
+            "name": "size_datagram",
+            "origin": "user_include",
+            "scope": "IR_FRAME::IR_FRAME"
+          },
+          {
+            "ID": "c:@S@IR_FRAME@FI@p_datagram",
+            "What": "FieldDecl",
+            "defdec": "Def",
+            "display": "p_datagram",
+            "location": {
+              "column": "17",
+              "line": "30",
+              "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+            },
+            "name": "p_datagram",
+            "origin": "user_include",
+            "scope": "IR_FRAME::IR_FRAME"
+          },
+          {
+            "ID": "c:@S@IR_FRAME@FI@size_datagram",
+            "What": "FieldDecl",
+            "defdec": "Def",
+            "display": "size_datagram",
+            "location": {
+              "column": "17",
+              "line": "31",
+              "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+            },
+            "name": "size_datagram",
+            "origin": "user_include",
+            "scope": "IR_FRAME::IR_FRAME"
+          }
+        ],
+        "name": "IR_FRAME",
         "origin": "user_include",
         "scope": "IR_FRAME"
       }
@@ -21741,6 +21913,62 @@
     "scope": null
   },
   {
+    "ID": "c:@F@INIT_IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void INIT_IR_FRAME(void)",
+    "location": {
+      "column": "6",
+      "line": "37",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "INIT_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@INIT_IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void INIT_IR_FRAME(void)",
+    "location": {
+      "column": "6",
+      "line": "37",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "INIT_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_FRAME_EMPTY#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_FRAME_EMPTY(void)",
+    "location": {
+      "column": "5",
+      "line": "38",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_FRAME_EMPTY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_FRAME_EMPTY#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_FRAME_EMPTY(void)",
+    "location": {
+      "column": "5",
+      "line": "38",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_FRAME_EMPTY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@ENQUEUE_SUITABLE_IR_FRAME#*$@S@IR_FRAME#",
     "What": "Function",
     "defdec": "Dec",
@@ -21765,6 +21993,90 @@
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
     },
     "name": "ENQUEUE_SUITABLE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@INIT_IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void INIT_IR_FRAME(void)",
+    "location": {
+      "column": "6",
+      "line": "38",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "INIT_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@INIT_IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void INIT_IR_FRAME(void)",
+    "location": {
+      "column": "6",
+      "line": "38",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "INIT_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_FRAME_FULL#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_FRAME_FULL(void)",
+    "location": {
+      "column": "5",
+      "line": "39",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_FRAME_FULL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_FRAME_FULL#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_FRAME_FULL(void)",
+    "location": {
+      "column": "5",
+      "line": "39",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_FRAME_FULL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_FRAME_EMPTY#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_FRAME_EMPTY(void)",
+    "location": {
+      "column": "5",
+      "line": "39",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_FRAME_EMPTY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_FRAME_EMPTY#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_FRAME_EMPTY(void)",
+    "location": {
+      "column": "5",
+      "line": "39",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_FRAME_EMPTY",
     "origin": "user_include",
     "scope": null
   },
@@ -21797,6 +22109,62 @@
     "scope": null
   },
   {
+    "ID": "c:@F@IS_IR_FRAME_FULL#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_FRAME_FULL(void)",
+    "location": {
+      "column": "5",
+      "line": "40",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_FRAME_FULL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_FRAME_FULL#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_FRAME_FULL(void)",
+    "location": {
+      "column": "5",
+      "line": "40",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_FRAME_FULL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_IR_FRAME#$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_IR_FRAME(struct IR_FRAME)",
+    "location": {
+      "column": "5",
+      "line": "40",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_IR_FRAME#$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_IR_FRAME(struct IR_FRAME)",
+    "location": {
+      "column": "5",
+      "line": "40",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@DEQUEUE_IR_FRAME#",
     "What": "Function",
     "defdec": "Dec",
@@ -21821,6 +22189,734 @@
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
     },
     "name": "DEQUEUE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_IR_FRAME#$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_IR_FRAME(struct IR_FRAME)",
+    "location": {
+      "column": "5",
+      "line": "41",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_IR_FRAME#$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_IR_FRAME(struct IR_FRAME)",
+    "location": {
+      "column": "5",
+      "line": "41",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_FRAME#*$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_FRAME(struct IR_FRAME *)",
+    "location": {
+      "column": "5",
+      "line": "41",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_FRAME#*$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_FRAME(struct IR_FRAME *)",
+    "location": {
+      "column": "5",
+      "line": "41",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_FRAME#*$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_FRAME(struct IR_FRAME *)",
+    "location": {
+      "column": "5",
+      "line": "42",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_FRAME#*2$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_FRAME(volatile struct IR_FRAME *)",
+    "location": {
+      "column": "5",
+      "line": "42",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_FRAME#*$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_FRAME(struct IR_FRAME *)",
+    "location": {
+      "column": "5",
+      "line": "42",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_FRAME#*2$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_FRAME(volatile struct IR_FRAME *)",
+    "location": {
+      "column": "5",
+      "line": "42",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_FRAME#*2$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_FRAME(volatile struct IR_FRAME *)",
+    "location": {
+      "column": "5",
+      "line": "43",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_FRAME#*2$@S@IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_FRAME(volatile struct IR_FRAME *)",
+    "location": {
+      "column": "5",
+      "line": "43",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "struct IR_FRAME * DEQUEUE_IR_FRAME(void)",
+    "location": {
+      "column": "18",
+      "line": "43",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "DEQUEUE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "struct IR_FRAME * DEQUEUE_IR_FRAME(void)",
+    "location": {
+      "column": "18",
+      "line": "43",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "DEQUEUE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "struct IR_FRAME * DEQUEUE_IR_FRAME(void)",
+    "location": {
+      "column": "18",
+      "line": "44",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "DEQUEUE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_FRAME#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "struct IR_FRAME * DEQUEUE_IR_FRAME(void)",
+    "location": {
+      "column": "18",
+      "line": "44",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "DEQUEUE_IR_FRAME",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@INIT_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void INIT_IR_DATAGRAM(void)",
+    "location": {
+      "column": "6",
+      "line": "45",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "INIT_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@INIT_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void INIT_IR_DATAGRAM(void)",
+    "location": {
+      "column": "6",
+      "line": "45",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "INIT_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_DATAGRAM_EMPTY#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_DATAGRAM_EMPTY(void)",
+    "location": {
+      "column": "5",
+      "line": "46",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_DATAGRAM_EMPTY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_DATAGRAM_EMPTY#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_DATAGRAM_EMPTY(void)",
+    "location": {
+      "column": "5",
+      "line": "46",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_DATAGRAM_EMPTY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@INIT_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void INIT_IR_DATAGRAM(void)",
+    "location": {
+      "column": "6",
+      "line": "46",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "INIT_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@INIT_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void INIT_IR_DATAGRAM(void)",
+    "location": {
+      "column": "6",
+      "line": "46",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "INIT_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_DATAGRAM_EMPTY#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_DATAGRAM_EMPTY(void)",
+    "location": {
+      "column": "5",
+      "line": "47",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_DATAGRAM_EMPTY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_DATAGRAM_EMPTY#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_DATAGRAM_EMPTY(void)",
+    "location": {
+      "column": "5",
+      "line": "47",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_DATAGRAM_EMPTY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_DATAGRAM_FULL#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_DATAGRAM_FULL(void)",
+    "location": {
+      "column": "5",
+      "line": "47",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_DATAGRAM_FULL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_DATAGRAM_FULL#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_DATAGRAM_FULL(void)",
+    "location": {
+      "column": "5",
+      "line": "47",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_DATAGRAM_FULL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_IR_DATAGRAM#$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_IR_DATAGRAM(struct IR_DATAGRAM)",
+    "location": {
+      "column": "5",
+      "line": "48",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_IR_DATAGRAM#$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_IR_DATAGRAM(struct IR_DATAGRAM)",
+    "location": {
+      "column": "5",
+      "line": "48",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_IR_DATAGRAM#$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_IR_DATAGRAM(struct IR_DATAGRAM)",
+    "location": {
+      "column": "5",
+      "line": "48",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_IR_DATAGRAM#$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_IR_DATAGRAM(struct IR_DATAGRAM)",
+    "location": {
+      "column": "5",
+      "line": "48",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_DATAGRAM_FULL#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_DATAGRAM_FULL(void)",
+    "location": {
+      "column": "5",
+      "line": "48",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_DATAGRAM_FULL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_DATAGRAM_FULL#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int IS_IR_DATAGRAM_FULL(void)",
+    "location": {
+      "column": "5",
+      "line": "48",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "IS_IR_DATAGRAM_FULL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "49",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "49",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "49",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "49",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_IR_DATAGRAM#$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_IR_DATAGRAM(struct IR_DATAGRAM)",
+    "location": {
+      "column": "5",
+      "line": "49",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_IR_DATAGRAM#$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_IR_DATAGRAM(struct IR_DATAGRAM)",
+    "location": {
+      "column": "5",
+      "line": "49",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(volatile struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "50",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(volatile struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "50",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "50",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "50",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(volatile struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "50",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(volatile struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "50",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(volatile struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "50",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(volatile struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "51",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(volatile struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "51",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(volatile struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "51",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "struct IR_DATAGRAM * DEQUEUE_IR_DATAGRAM(void)",
+    "location": {
+      "column": "21",
+      "line": "51",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "DEQUEUE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "struct IR_DATAGRAM * DEQUEUE_IR_DATAGRAM(void)",
+    "location": {
+      "column": "21",
+      "line": "51",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "DEQUEUE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "struct IR_DATAGRAM * DEQUEUE_IR_DATAGRAM(void)",
+    "location": {
+      "column": "21",
+      "line": "51",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "DEQUEUE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "struct IR_DATAGRAM * DEQUEUE_IR_DATAGRAM(void)",
+    "location": {
+      "column": "21",
+      "line": "52",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "DEQUEUE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "struct IR_DATAGRAM * DEQUEUE_IR_DATAGRAM(void)",
+    "location": {
+      "column": "21",
+      "line": "52",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "DEQUEUE_IR_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "struct IR_DATAGRAM * DEQUEUE_IR_DATAGRAM(void)",
+    "location": {
+      "column": "21",
+      "line": "52",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.h"
+    },
+    "name": "DEQUEUE_IR_DATAGRAM",
     "origin": "user_include",
     "scope": null
   },
@@ -22429,6 +23525,48 @@
     "scope": null
   },
   {
+    "ID": "c:@F@IR_TRANSMIT_INIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_TRANSMIT_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "32",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\psy\\ir_transmit_psy.h"
+    },
+    "name": "IR_TRANSMIT_INIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_INIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_TRANSMIT_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "32",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\psy\\ir_transmit_psy.h"
+    },
+    "name": "IR_TRANSMIT_INIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_INIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_TRANSMIT_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "32",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\psy\\ir_transmit_psy.h"
+    },
+    "name": "IR_TRANSMIT_INIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@IR_TRANSMIT_SIGNAL_ONE#",
     "What": "Function",
     "defdec": "Dec",
@@ -22905,6 +24043,440 @@
     "scope": null
   },
   {
+    "ID": "c:@IR_QUEUE_DATAGRAM",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "IR_QUEUE_DATAGRAM",
+    "location": {
+      "column": "20",
+      "line": "90",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "IR_QUEUE_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@IR_DATAGRAM_FRONT",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "IR_DATAGRAM_FRONT",
+    "location": {
+      "column": "12",
+      "line": "92",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "IR_DATAGRAM_FRONT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@IR_DATAGRAM_REAR",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "IR_DATAGRAM_REAR",
+    "location": {
+      "column": "12",
+      "line": "93",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "IR_DATAGRAM_REAR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@INIT_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void INIT_IR_DATAGRAM(void)",
+    "location": {
+      "column": "6",
+      "line": "95",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "INIT_IR_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_DATAGRAM_EMPTY#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int IS_IR_DATAGRAM_EMPTY(void)",
+    "location": {
+      "column": "5",
+      "line": "100",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "IS_IR_DATAGRAM_EMPTY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IS_IR_DATAGRAM_FULL#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int IS_IR_DATAGRAM_FULL(void)",
+    "location": {
+      "column": "5",
+      "line": "104",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "IS_IR_DATAGRAM_FULL",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_IR_DATAGRAM#$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int ENQUEUE_IR_DATAGRAM(struct IR_DATAGRAM)",
+    "location": {
+      "column": "5",
+      "line": "108",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "ENQUEUE_IR_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@2479@F@ENQUEUE_IR_DATAGRAM#$@S@IR_DATAGRAM#@return_value",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "return_value",
+    "location": {
+      "column": "7",
+      "line": "109",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "return_value",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "119",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "119",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "119",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@2758@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#@target",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "target",
+    "location": {
+      "column": "23",
+      "line": "120",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "target",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@2789@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#@return_value",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "return_value",
+    "location": {
+      "column": "7",
+      "line": "121",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "return_value",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3043@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "12",
+      "line": "132",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3085@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "12",
+      "line": "133",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3121@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*$@S@IR_DATAGRAM#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "12",
+      "line": "134",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(volatile struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "138",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(volatile struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "139",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3263@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#@target",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "target",
+    "location": {
+      "column": "23",
+      "line": "139",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "target",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int ENQUEUE_SUITABLE_IR_DATAGRAM(volatile struct IR_DATAGRAM *)",
+    "location": {
+      "column": "5",
+      "line": "140",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "ENQUEUE_SUITABLE_IR_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3294@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#@return_value",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "return_value",
+    "location": {
+      "column": "7",
+      "line": "140",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "return_value",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3305@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#@target",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "target",
+    "location": {
+      "column": "23",
+      "line": "140",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "target",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3336@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#@return_value",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "return_value",
+    "location": {
+      "column": "7",
+      "line": "141",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "return_value",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3341@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#@target",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "target",
+    "location": {
+      "column": "23",
+      "line": "141",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "target",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3372@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#@return_value",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "return_value",
+    "location": {
+      "column": "7",
+      "line": "142",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "return_value",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3548@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "21",
+      "line": "151",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3632@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "21",
+      "line": "153",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_structs.c@3704@F@ENQUEUE_SUITABLE_IR_DATAGRAM#*2$@S@IR_DATAGRAM#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "21",
+      "line": "155",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "struct IR_DATAGRAM * DEQUEUE_IR_DATAGRAM(void)",
+    "location": {
+      "column": "21",
+      "line": "157",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "DEQUEUE_IR_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "struct IR_DATAGRAM * DEQUEUE_IR_DATAGRAM(void)",
+    "location": {
+      "column": "21",
+      "line": "159",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "DEQUEUE_IR_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEQUEUE_IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "struct IR_DATAGRAM * DEQUEUE_IR_DATAGRAM(void)",
+    "location": {
+      "column": "21",
+      "line": "161",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\ir_structs.c"
+    },
+    "name": "DEQUEUE_IR_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:ir_trs.h@167@macro@_IR_TRS_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -22921,11 +24493,431 @@
   {
     "ID": "c:@F@IR_ANALOG_INIT#",
     "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_ANALOG_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "27",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_ANALOG_INIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_ANALOG_INIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_ANALOG_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "27",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_ANALOG_INIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_TRS_INIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_TRANSMIT_TRS_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "28",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_TRANSMIT_TRS_INIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_TRS_INIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_TRANSMIT_TRS_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "28",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_TRANSMIT_TRS_INIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_INIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_TRANSMIT_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "28",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_TRANSMIT_INIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_INIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_TRANSMIT_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "28",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_TRANSMIT_INIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_WAIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint16_t IR_LEVEL_WAIT(void)",
+    "location": {
+      "column": "10",
+      "line": "29",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_LEVEL_WAIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_WAIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint16_t IR_LEVEL_WAIT(void)",
+    "location": {
+      "column": "10",
+      "line": "29",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_LEVEL_WAIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint16_t IR_LEVEL(void)",
+    "location": {
+      "column": "10",
+      "line": "30",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_LEVEL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint16_t IR_LEVEL(void)",
+    "location": {
+      "column": "10",
+      "line": "30",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_LEVEL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_AVG#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint16_t IR_LEVEL_AVG(void)",
+    "location": {
+      "column": "10",
+      "line": "31",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_LEVEL_AVG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_AVG#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint16_t IR_LEVEL_AVG(void)",
+    "location": {
+      "column": "10",
+      "line": "31",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_LEVEL_AVG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_EVEN_PARITY#c#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned char GET_EVEN_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "32",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "GET_EVEN_PARITY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_EVEN_PARITY#c#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned char GET_EVEN_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "32",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "GET_EVEN_PARITY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@uid8",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "uid8",
+    "location": {
+      "column": "16",
+      "line": "32",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "uid8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_ODD_PARITY#c#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned char GET_ODD_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "33",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "GET_ODD_PARITY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_ODD_PARITY#c#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "unsigned char GET_ODD_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "33",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "GET_ODD_PARITY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@uid8",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "uid8",
+    "location": {
+      "column": "16",
+      "line": "33",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "uid8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_TRANSMIT_SEND_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "6",
+      "line": "34",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_TRANSMIT_SEND_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_TRANSMIT_SEND_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "6",
+      "line": "34",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_TRANSMIT_SEND_DATAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_RECEIVE_DARAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_TRANSMIT_RECEIVE_DARAGRAM(void)",
+    "location": {
+      "column": "6",
+      "line": "35",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_TRANSMIT_RECEIVE_DARAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_RECEIVE_DARAGRAM#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void IR_TRANSMIT_RECEIVE_DARAGRAM(void)",
+    "location": {
+      "column": "6",
+      "line": "35",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "IR_TRANSMIT_RECEIVE_DARAGRAM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@uid8",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "uid8",
+    "location": {
+      "column": "16",
+      "line": "43",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.h"
+    },
+    "name": "uid8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@353@macro@IR_LEVEL_THRESHOLD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IR_LEVEL_THRESHOLD",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL_THRESHOLD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@390@macro@IR_LEVEL_HIGH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IR_LEVEL_HIGH",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL_HIGH",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_ANALOG_INIT#",
+    "What": "Function",
     "defdec": "Def",
     "display": "void IR_ANALOG_INIT(void)",
     "location": {
       "column": "6",
       "line": "21",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_ANALOG_INIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@IR_RECEIVE_TEMP_DATAGRAM",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "IR_RECEIVE_TEMP_DATAGRAM",
+    "location": {
+      "column": "26",
+      "line": "22",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_RECEIVE_TEMP_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@uid8",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "uid8",
+    "location": {
+      "column": "16",
+      "line": "23",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "uid8",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_ANALOG_INIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_ANALOG_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "24",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_ANALOG_INIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_ANALOG_INIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_ANALOG_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "26",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_ANALOG_INIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_ANALOG_INIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_ANALOG_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "27",
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
     },
     "name": "IR_ANALOG_INIT",
@@ -22947,6 +24939,76 @@
     "scope": null
   },
   {
+    "ID": "c:@F@IR_TRANSMIT_INIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "65",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_INIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_WAIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL_WAIT(void)",
+    "location": {
+      "column": "10",
+      "line": "65",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL_WAIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_INIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "67",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_INIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_TRS_INIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_TRS_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "68",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_TRS_INIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_INIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "68",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_INIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@IR_LEVEL#",
     "What": "Function",
     "defdec": "Def",
@@ -22957,6 +25019,1352 @@
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
     },
     "name": "IR_LEVEL",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_WAIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL_WAIT(void)",
+    "location": {
+      "column": "10",
+      "line": "70",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL_WAIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_WAIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL_WAIT(void)",
+    "location": {
+      "column": "10",
+      "line": "72",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL_WAIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL(void)",
+    "location": {
+      "column": "10",
+      "line": "72",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_WAIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL_WAIT(void)",
+    "location": {
+      "column": "10",
+      "line": "73",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL_WAIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_AVG#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL_AVG(void)",
+    "location": {
+      "column": "10",
+      "line": "76",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL_AVG",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL(void)",
+    "location": {
+      "column": "10",
+      "line": "77",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@2775@F@IR_LEVEL_AVG#@avg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "avg",
+    "location": {
+      "column": "12",
+      "line": "77",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "avg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_EVEN_PARITY#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned char GET_EVEN_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "78",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "GET_EVEN_PARITY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL(void)",
+    "location": {
+      "column": "10",
+      "line": "79",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@2878@F@GET_EVEN_PARITY#c#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "17",
+      "line": "79",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL(void)",
+    "location": {
+      "column": "10",
+      "line": "80",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_AVG#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL_AVG(void)",
+    "location": {
+      "column": "10",
+      "line": "81",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL_AVG",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@2855@F@IR_LEVEL_AVG#@avg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "avg",
+    "location": {
+      "column": "12",
+      "line": "82",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "avg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_AVG#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL_AVG(void)",
+    "location": {
+      "column": "10",
+      "line": "83",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL_AVG",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_LEVEL_AVG#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t IR_LEVEL_AVG(void)",
+    "location": {
+      "column": "10",
+      "line": "84",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_LEVEL_AVG",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@2909@F@IR_LEVEL_AVG#@avg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "avg",
+    "location": {
+      "column": "12",
+      "line": "84",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "avg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@2931@F@IR_LEVEL_AVG#@avg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "avg",
+    "location": {
+      "column": "12",
+      "line": "85",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "avg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@2935@F@IR_LEVEL_AVG#@avg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "avg",
+    "location": {
+      "column": "12",
+      "line": "85",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "avg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_ODD_PARITY#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned char GET_ODD_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "92",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "GET_ODD_PARITY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_EVEN_PARITY#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned char GET_EVEN_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "95",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "GET_EVEN_PARITY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_SEND_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "6",
+      "line": "96",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_SEND_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_SEND_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "6",
+      "line": "96",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_SEND_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3245@F@GET_EVEN_PARITY#c#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "17",
+      "line": "96",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_EVEN_PARITY#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned char GET_EVEN_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "100",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "GET_EVEN_PARITY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3325@F@GET_EVEN_PARITY#c#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "17",
+      "line": "101",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_EVEN_PARITY#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned char GET_EVEN_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "102",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "GET_EVEN_PARITY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_EVEN_PARITY#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned char GET_EVEN_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "103",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "GET_EVEN_PARITY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3379@F@GET_EVEN_PARITY#c#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "17",
+      "line": "103",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3479@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "19",
+      "line": "103",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3401@F@GET_EVEN_PARITY#c#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "17",
+      "line": "104",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3405@F@GET_EVEN_PARITY#c#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "17",
+      "line": "104",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3505@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@p_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "p_segment",
+    "location": {
+      "column": "24",
+      "line": "104",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "p_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3604@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@parity",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "parity",
+    "location": {
+      "column": "23",
+      "line": "105",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "parity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3686@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@size_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "size_segment",
+    "location": {
+      "column": "23",
+      "line": "106",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "size_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_ODD_PARITY#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned char GET_ODD_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "109",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "GET_ODD_PARITY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_SEND_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "6",
+      "line": "113",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_SEND_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_ODD_PARITY#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned char GET_ODD_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "114",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "GET_ODD_PARITY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_ODD_PARITY#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned char GET_ODD_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "116",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "GET_ODD_PARITY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GET_ODD_PARITY#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "unsigned char GET_ODD_PARITY(unsigned char)",
+    "location": {
+      "column": "15",
+      "line": "117",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "GET_ODD_PARITY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_SEND_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "6",
+      "line": "118",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_SEND_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_SEND_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "6",
+      "line": "120",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_SEND_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@Sa",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "8",
+      "line": "120",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "members": [
+      {
+        "ID": "c:ir_trs.c@3846@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@frame",
+        "What": "VarDecl",
+        "defdec": "Def",
+        "display": "frame",
+        "location": {
+          "column": "19",
+          "line": "120",
+          "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+        },
+        "name": "frame",
+        "origin": "project_file",
+        "scope": "_anonymous_ir_trs_c_120_8"
+      },
+      {
+        "ID": "c:ir_trs.c@3844@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@frame",
+        "What": "VarDecl",
+        "defdec": "Def",
+        "display": "frame",
+        "location": {
+          "column": "19",
+          "line": "120",
+          "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+        },
+        "name": "frame",
+        "origin": "project_file",
+        "scope": "_anonymous_ir_trs_c_120_8"
+      }
+    ],
+    "name": "",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_SEND_DATAGRAM(struct IR_DATAGRAM *)",
+    "location": {
+      "column": "6",
+      "line": "121",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_SEND_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3872@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@p_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "p_segment",
+    "location": {
+      "column": "24",
+      "line": "121",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "p_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3870@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@p_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "p_segment",
+    "location": {
+      "column": "24",
+      "line": "121",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "p_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3971@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@parity",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "parity",
+    "location": {
+      "column": "23",
+      "line": "122",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "parity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3969@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@parity",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "parity",
+    "location": {
+      "column": "23",
+      "line": "122",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "parity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4053@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@size_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "size_segment",
+    "location": {
+      "column": "23",
+      "line": "123",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "size_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4051@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@size_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "size_segment",
+    "location": {
+      "column": "23",
+      "line": "123",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "size_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3924@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "19",
+      "line": "125",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3950@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@p_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "p_segment",
+    "location": {
+      "column": "24",
+      "line": "126",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "p_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@3978@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "19",
+      "line": "127",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4049@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@parity",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "parity",
+    "location": {
+      "column": "23",
+      "line": "127",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "parity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4000@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "19",
+      "line": "128",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4004@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "19",
+      "line": "128",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4131@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@size_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "size_segment",
+    "location": {
+      "column": "23",
+      "line": "128",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "size_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4004@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@p_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "p_segment",
+    "location": {
+      "column": "24",
+      "line": "128",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "p_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4103@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@parity",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "parity",
+    "location": {
+      "column": "23",
+      "line": "129",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "parity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4026@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@p_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "p_segment",
+    "location": {
+      "column": "24",
+      "line": "129",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "p_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4030@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@p_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "p_segment",
+    "location": {
+      "column": "24",
+      "line": "129",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "p_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4125@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@parity",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "parity",
+    "location": {
+      "column": "17",
+      "line": "130",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "parity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4129@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@parity",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "parity",
+    "location": {
+      "column": "17",
+      "line": "130",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "parity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4125@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@parity",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "parity",
+    "location": {
+      "column": "23",
+      "line": "130",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "parity",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4185@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@size_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "size_segment",
+    "location": {
+      "column": "23",
+      "line": "130",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "size_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4207@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@size_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "size_segment",
+    "location": {
+      "column": "23",
+      "line": "131",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "size_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4201@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@size_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "size_segment",
+    "location": {
+      "column": "23",
+      "line": "131",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "size_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4205@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@size_segment",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "size_segment",
+    "location": {
+      "column": "23",
+      "line": "131",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "size_segment",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4325@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "21",
+      "line": "133",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4319@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "21",
+      "line": "133",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4323@F@IR_TRANSMIT_SEND_DATAGRAM#*$@S@IR_DATAGRAM#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "21",
+      "line": "133",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_RECEIVE_DARAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "struct IR_DATAGRAM IR_TRANSMIT_RECEIVE_DARAGRAM(void)",
+    "location": {
+      "column": "20",
+      "line": "142",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_RECEIVE_DARAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_RECEIVE_DARAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "struct IR_DATAGRAM IR_TRANSMIT_RECEIVE_DARAGRAM(void)",
+    "location": {
+      "column": "20",
+      "line": "142",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_RECEIVE_DARAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@IR_RECEIVE_TEMP_DATAGRAM",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "IR_RECEIVE_TEMP_DATAGRAM",
+    "location": {
+      "column": "26",
+      "line": "142",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_RECEIVE_TEMP_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_RECEIVE_DARAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "struct IR_DATAGRAM IR_TRANSMIT_RECEIVE_DARAGRAM(void)",
+    "location": {
+      "column": "20",
+      "line": "143",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_RECEIVE_DARAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4637@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@datagram",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "datagram",
+    "location": {
+      "column": "22",
+      "line": "143",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "datagram",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4638@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@datagram",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "datagram",
+    "location": {
+      "column": "22",
+      "line": "143",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "datagram",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_RECEIVE_DARAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_RECEIVE_DARAGRAM(void)",
+    "location": {
+      "column": "6",
+      "line": "144",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_RECEIVE_DARAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4669@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "20",
+      "line": "144",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4670@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "20",
+      "line": "144",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4690@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@IR_RECEIVE_TEMP_DATAGRAM",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "IR_RECEIVE_TEMP_DATAGRAM",
+    "location": {
+      "column": "22",
+      "line": "144",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_RECEIVE_TEMP_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@IR_TRANSMIT_RECEIVE_DARAGRAM#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void IR_TRANSMIT_RECEIVE_DARAGRAM(void)",
+    "location": {
+      "column": "6",
+      "line": "145",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_TRANSMIT_RECEIVE_DARAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4738@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "20",
+      "line": "145",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4678@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@IR_RECEIVE_TEMP_DATAGRAM",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "IR_RECEIVE_TEMP_DATAGRAM",
+    "location": {
+      "column": "22",
+      "line": "145",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_RECEIVE_TEMP_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4726@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "20",
+      "line": "146",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4700@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@IR_RECEIVE_TEMP_DATAGRAM",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "IR_RECEIVE_TEMP_DATAGRAM",
+    "location": {
+      "column": "22",
+      "line": "146",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_RECEIVE_TEMP_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4704@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@IR_RECEIVE_TEMP_DATAGRAM",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "IR_RECEIVE_TEMP_DATAGRAM",
+    "location": {
+      "column": "22",
+      "line": "146",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_RECEIVE_TEMP_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4698@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@IR_RECEIVE_TEMP_DATAGRAM",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "IR_RECEIVE_TEMP_DATAGRAM",
+    "location": {
+      "column": "22",
+      "line": "146",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_RECEIVE_TEMP_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4702@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@IR_RECEIVE_TEMP_DATAGRAM",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "IR_RECEIVE_TEMP_DATAGRAM",
+    "location": {
+      "column": "22",
+      "line": "146",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "IR_RECEIVE_TEMP_DATAGRAM",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4748@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "20",
+      "line": "147",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4752@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "20",
+      "line": "147",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4746@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "20",
+      "line": "147",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@4750@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "frame",
+    "location": {
+      "column": "20",
+      "line": "147",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@5057@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "21",
+      "line": "152",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ir_trs.c@5061@F@IR_TRANSMIT_RECEIVE_DARAGRAM#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "21",
+      "line": "152",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\ir_transmit\\trs\\ir_trs.c"
+    },
+    "name": "i",
     "origin": "project_file",
     "scope": null
   },
@@ -23803,6 +27211,20 @@
     "scope": null
   },
   {
+    "ID": "c:@ADC1",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ADC1",
+    "location": {
+      "column": "30",
+      "line": "44",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\adc.h"
+    },
+    "name": "ADC1",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@ADC2",
     "What": "Variable",
     "defdec": "Dec",
@@ -23813,6 +27235,34 @@
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\adc.h"
     },
     "name": "ADC2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@ADC2",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ADC2",
+    "location": {
+      "column": "30",
+      "line": "45",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\adc.h"
+    },
+    "name": "ADC2",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@ADC3",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ADC3",
+    "location": {
+      "column": "30",
+      "line": "46",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\adc.h"
+    },
+    "name": "ADC3",
     "origin": "user_include",
     "scope": null
   },
@@ -24463,6 +27913,20 @@
     "scope": null
   },
   {
+    "ID": "c:@uid8",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "uid8",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.c"
+    },
+    "name": "uid8",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@UID_GET_BYTE#c#",
     "What": "Function",
     "defdec": "Def",
@@ -24470,6 +27934,20 @@
     "location": {
       "column": "9",
       "line": "14",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.c"
+    },
+    "name": "UID_GET_BYTE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UID_GET_BYTE#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t UID_GET_BYTE(uint8_t)",
+    "location": {
+      "column": "9",
+      "line": "15",
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.c"
     },
     "name": "UID_GET_BYTE",
@@ -24491,6 +27969,20 @@
     "scope": null
   },
   {
+    "ID": "c:@F@UID_GET_HALF_WORD#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t UID_GET_HALF_WORD(uint8_t)",
+    "location": {
+      "column": "10",
+      "line": "28",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.c"
+    },
+    "name": "UID_GET_HALF_WORD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@UID_GET_WORD#c#",
     "What": "Function",
     "defdec": "Def",
@@ -24498,6 +27990,20 @@
     "location": {
       "column": "10",
       "line": "40",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.c"
+    },
+    "name": "UID_GET_WORD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UID_GET_WORD#c#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint32_t UID_GET_WORD(uint8_t)",
+    "location": {
+      "column": "10",
+      "line": "41",
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.c"
     },
     "name": "UID_GET_WORD",
@@ -24605,6 +28111,34 @@
     "scope": null
   },
   {
+    "ID": "c:@uid8",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "uid8",
+    "location": {
+      "column": "16",
+      "line": "28",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.h"
+    },
+    "name": "uid8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@uid8",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "uid8",
+    "location": {
+      "column": "16",
+      "line": "28",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.h"
+    },
+    "name": "uid8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@UID_GET_BYTE#c#",
     "What": "Function",
     "defdec": "Dec",
@@ -24626,6 +28160,34 @@
     "location": {
       "column": "9",
       "line": "31",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.h"
+    },
+    "name": "UID_GET_BYTE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UID_GET_BYTE#c#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t UID_GET_BYTE(uint8_t)",
+    "location": {
+      "column": "9",
+      "line": "32",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.h"
+    },
+    "name": "UID_GET_BYTE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UID_GET_BYTE#c#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t UID_GET_BYTE(uint8_t)",
+    "location": {
+      "column": "9",
+      "line": "32",
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.h"
     },
     "name": "UID_GET_BYTE",
@@ -24654,6 +28216,34 @@
     "location": {
       "column": "10",
       "line": "32",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.h"
+    },
+    "name": "UID_GET_HALF_WORD",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UID_GET_HALF_WORD#c#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint16_t UID_GET_HALF_WORD(uint8_t)",
+    "location": {
+      "column": "10",
+      "line": "33",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.h"
+    },
+    "name": "UID_GET_HALF_WORD",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UID_GET_HALF_WORD#c#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint16_t UID_GET_HALF_WORD(uint8_t)",
+    "location": {
+      "column": "10",
+      "line": "33",
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.h"
     },
     "name": "UID_GET_HALF_WORD",
@@ -24682,6 +28272,34 @@
     "location": {
       "column": "10",
       "line": "33",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.h"
+    },
+    "name": "UID_GET_WORD",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UID_GET_WORD#c#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint32_t UID_GET_WORD(uint8_t)",
+    "location": {
+      "column": "10",
+      "line": "34",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.h"
+    },
+    "name": "UID_GET_WORD",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UID_GET_WORD#c#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint32_t UID_GET_WORD(uint8_t)",
+    "location": {
+      "column": "10",
+      "line": "34",
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\res\\stm32\\uid.h"
     },
     "name": "UID_GET_WORD",
@@ -24787,6 +28405,62 @@
     "scope": null
   },
   {
+    "ID": "c:@F@RCC_INIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void RCC_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "36",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "RCC_INIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@RCC_INIT#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void RCC_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "36",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "RCC_INIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SystemInit#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SystemInit(void)",
+    "location": {
+      "column": "6",
+      "line": "37",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "SystemInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SystemInit#",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SystemInit(void)",
+    "location": {
+      "column": "6",
+      "line": "37",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "SystemInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@uid",
     "What": "Variable",
     "defdec": "Def",
@@ -24797,6 +28471,34 @@
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
     },
     "name": "uid",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@uid8",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "uid8",
+    "location": {
+      "column": "16",
+      "line": "38",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "uid8",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@uid8",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "uid8",
+    "location": {
+      "column": "16",
+      "line": "39",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "uid8",
     "origin": "project_file",
     "scope": null
   },
@@ -24815,7 +28517,49 @@
     "scope": null
   },
   {
+    "ID": "c:@F@main#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "41",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "41",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:main.cpp@1194@F@main#@send_frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "send_frame",
+    "location": {
+      "column": "19",
+      "line": "52",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "send_frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@1208@F@main#@send_frame",
     "What": "Variable",
     "defdec": "Def",
     "display": "send_frame",
@@ -24843,6 +28587,90 @@
     "scope": null
   },
   {
+    "ID": "c:main.cpp@1239@F@main#@recv_frame",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "recv_frame",
+    "location": {
+      "column": "20",
+      "line": "53",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "recv_frame",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@1264@F@main#@level",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "level",
+    "location": {
+      "column": "14",
+      "line": "54",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "level",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@1265@F@main#@level",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "level",
+    "location": {
+      "column": "14",
+      "line": "54",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "level",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@1269@F@main#@level",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "level",
+    "location": {
+      "column": "14",
+      "line": "54",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "level",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@1269@F@main#@level",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "level",
+    "location": {
+      "column": "14",
+      "line": "54",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "level",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@1375@F@main#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "12",
+      "line": "58",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:main.cpp@1361@F@main#@i",
     "What": "Variable",
     "defdec": "Def",
@@ -24850,6 +28678,20 @@
     "location": {
       "column": "12",
       "line": "58",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@1502@F@main#@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "12",
+      "line": "63",
       "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
     },
     "name": "i",
@@ -24885,6 +28727,34 @@
     "scope": null
   },
   {
+    "ID": "c:@F@SystemInit#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SystemInit(void)",
+    "location": {
+      "column": "6",
+      "line": "82",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "SystemInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SystemInit#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SystemInit(void)",
+    "location": {
+      "column": "6",
+      "line": "83",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "SystemInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@RCC_INIT#",
     "What": "Function",
     "defdec": "Def",
@@ -24896,6 +28766,48 @@
     },
     "name": "RCC_INIT",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@RCC_INIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void RCC_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "95",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "RCC_INIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@RCC_INIT#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void RCC_INIT(void)",
+    "location": {
+      "column": "6",
+      "line": "96",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\main.cpp"
+    },
+    "name": "RCC_INIT",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:motor.h@112@macro@_MOTOR_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_MOTOR_H",
+    "location": {
+      "column": "9",
+      "line": "11",
+      "path": "E:\\\ub300\ud559\\\uc0c1\uba85\ub300\\3\ud559\ub144\\2\ud559\uae30\\University.3rd.Class.Capstone_Design\\Source codes\\ARM\\lib\\motor\\motor.h"
+    },
+    "name": "_MOTOR_H",
+    "origin": "user_include",
     "scope": null
   }
 ]

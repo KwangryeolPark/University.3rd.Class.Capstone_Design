@@ -3,7 +3,7 @@
 	길이 37mm
 	파장 940nm
 	순방향 전압 1.2 - 1.4V
-	정방향 전휴 100mA
+	정방향 전휴 25mA
 	https://ko.aliexpress.com/item/1005002402135348.html?gatewayAdapt=glo2kor&spm=a2g0o.9042311.0.0.373c4c4dwRpbg9
 
 IR receiver

@@ -2890,6 +2890,15 @@
             </file>
         </group>
         <group>
+            <name>mtoor</name>
+            <file>
+                <name>$PROJ_DIR$\lib\motor\motor.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\lib\motor\motor.h</name>
+            </file>
+        </group>
+        <group>
             <name>printf</name>
             <file>
                 <name>$PROJ_DIR$\lib\printf\printf.c</name>

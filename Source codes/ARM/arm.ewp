@@ -341,6 +341,7 @@
                     <state>$PROJ_DIR$\lib\printf</state>
                     <state>$PROJ_DIR$\lib\ir_transmit\psy</state>
                     <state>$PROJ_DIR$\lib\ir_transmit</state>
+                    <state>E:\대학\상명대\3학년\2학기\University.3rd.Class.Capstone_Design\Source codes\ARM\lib\ir_transmit\trs</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -2162,6 +2163,15 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\lib\ir_transmit\ir_structs.h</name>
+            </file>
+        </group>
+        <group>
+            <name>mtoor</name>
+            <file>
+                <name>$PROJ_DIR$\lib\motor\motor.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\lib\motor\motor.h</name>
             </file>
         </group>
         <group>
