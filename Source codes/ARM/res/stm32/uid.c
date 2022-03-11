@@ -10,6 +10,7 @@
 #include "uid.h"
 
 volatile struct _UID *UID = (struct _UID *) 0x1FFFF7E8;
+uint8_t uid8;
 
 uint8_t UID_GET_BYTE(uint8_t UID_STEP) {
   if (UID_STEP == 0) {

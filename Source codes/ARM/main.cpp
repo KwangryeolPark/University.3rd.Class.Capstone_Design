@@ -31,11 +31,12 @@ TIM7 is for delay_ms.
 #include "string.h"
 #include "uid.h"
 #include "device_type.h"
+#include "ir_trs.h"
 
 void RCC_INIT(void);
 void SystemInit(void);
 
-uint8_t uid;                                                                    //      System Unique Indentifier
+extern uint8_t uid8;                                                                   //      System Unique Indentifier
 
 int main(void) {
   SystemInit();
@@ -44,12 +45,18 @@ int main(void) {
   putclear();
   printf("Density      \t: %c\n", DEVICE_TYPE_GET_TYPE());
   printf("Flash size   \t: %dK\n", DEVICE_TYPE_GET_FLASH_SIZE());
-  printf("Serial number\t: %x-%x-%x\n", UID_GET_WORD(2), UID_GET_WORD(1), UID_GET_WORD(0));
+  printf("Serial number\t: %x-%x-%x\n", UID_GET_WORD(2), UID_GET_WORD(1), uid8 = UID_GET_WORD(0));
   printf("=====================================\n");
   
-  uid = UID_GET_BYTE(0);
+  uid8 = UID_GET_BYTE(0);
+  IR_TRANSMIT_TRS_INIT();
+  while(1) {
+    uint16_t level = IR_LEVEL_WAIT();
+    printf("%d\n", level);
+    delay_ms(10);
+  }
   
-  struct IR_FRAME send_frame;
+/*  struct IR_FRAME send_frame;
   struct IR_FRAME *recv_frame;
   strcpy((char *) send_frame.p_datagram, "Hello_World0");
   send_frame.size_datagram = 13;
@@ -63,7 +70,7 @@ int main(void) {
   for (int i = 0; i < 8; i++) {
     recv_frame = DEQUEUE_IR_FRAME();
     printf("Data size: %3d, msg: %s\n", recv_frame -> size_datagram, recv_frame -> p_datagram);
-  }
+  }*/
   
   return 0;
 }
